@@ -1,0 +1,42 @@
+@layer components {
+    .padding-x {
+        @apply px-5 md:px-10;
+    }
+
+    .padding-x-lg {
+        @apply px-5 md:px-20;
+    }
+
+    .section-padding {
+        @apply px-5 md:px-10 md:mt-40 mt-20;
+    }
+
+    .mt-responsive {
+        @apply xl:mt-20 md:mt-0 mt-40;
+    }
+
+    /* General Grids */
+    .grid-base {
+        @apply grid grid-cols-1;
+    }
+
+    .grid-2-cols {
+        @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+    }
+
+    .grid-3-cols {
+        @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8;
+    }
+
+    .grid-3-cols-md-tight {
+        @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0;
+    }
+
+    .grid-4-cols {
+        @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8;
+    }
+
+    .grid-12-cols {
+        @apply grid grid-cols-1 xl:grid-cols-12 gap-10;
+    }
+}

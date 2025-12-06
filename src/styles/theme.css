@@ -1,0 +1,33 @@
+:root {
+    --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
+    --ai-gradient: linear-gradient(135deg, #00d4ff 0%, #0099ff 50%, #0066ff 100%);
+    --neural-glow: 0 0 30px rgba(0, 212, 255, 0.6);
+    --pulse-speed: 2s;
+    --cyan-primary: #00d4ff;
+    --cyan-secondary: #0099ff;
+    --blue-deep: #0066ff;
+    --navy-dark: #001a33;
+    --navy-darker: #000d1a;
+}
+
+@theme {
+    --font-sans: "Inter", sans-serif;
+    --font-display: "Space Grotesk", sans-serif;
+    --color-white-50: #e0e7ff;
+    --color-black-50: #1a1a2e;
+    --color-black-100: #0f0f23;
+    --color-black-200: #16213e;
+    --color-blue-50: #a5b4fc;
+    --color-blue-100: #1e1b4b;
+    --color-purple-50: #c084fc;
+    --color-purple-100: #581c87;
+    --color-ai-primary: #00d4ff;
+    /* Cyan Neon */
+    --color-ai-secondary: #0066ff;
+    /* Deep Blue Neon */
+    --color-ai-accent: #d946ef;
+    /* Magenta Neon */
+    --color-cyan-primary: #00d4ff;
+    --color-cyan-secondary: #0099ff;
+    --color-blue-deep: #0066ff;
+}

@@ -1,0 +1,171 @@
+@layer components {
+    .card-border {
+        @apply border border-purple-50/20 bg-black-100/80;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(102, 126, 234, 0.15);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .card-border:hover {
+        border-color: rgba(0, 212, 255, 0.5);
+        box-shadow:
+            0 8px 32px rgba(0, 212, 255, 0.3),
+            0 0 60px rgba(0, 212, 255, 0.2),
+            inset 0 0 20px rgba(0, 212, 255, 0.1);
+        transform: translateY(-8px) scale(1.02);
+    }
+
+    .marquee-item {
+        @apply md:w-40 w-32;
+        filter: grayscale(0.5) brightness(0.8);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .marquee-item:hover {
+        filter: grayscale(0) brightness(1.2) drop-shadow(0 0 20px rgba(0, 212, 255, 0.6));
+        transform: scale(1.15) translateY(-5px);
+    }
+
+    .gradient-edge {
+        @apply w-36 h-full absolute bottom-0 z-20;
+    }
+}
+
+.gradient-line {
+    width: 3px;
+    background: linear-gradient(0deg,
+            rgba(69, 222, 196, 0) 0%,
+            #00d4ff 25%,
+            #0066ff 50%,
+            #d946ef 75%,
+            #00d4ff 100%);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.8);
+    animation: gradient-pulse 3s ease-in-out infinite, gradient-flow 4s linear infinite;
+}
+
+@keyframes gradient-pulse {
+
+    0%,
+    100% {
+        opacity: 0.6;
+        box-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+    }
+
+    50% {
+        opacity: 1;
+        box-shadow: 0 0 25px rgba(0, 212, 255, 1);
+    }
+}
+
+@keyframes gradient-flow {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+.gradient-edge:nth-of-type(1) {
+    left: 0;
+    background: linear-gradient(90deg,
+            rgba(10, 10, 31, 1) 0%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.gradient-edge:nth-of-type(2) {
+    right: 0;
+    background: linear-gradient(-90deg,
+            rgba(10, 10, 31, 1) 0%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+/* marquee */
+.marquee {
+    width: 100dvw;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-box {
+    display: flex;
+    align-items: center;
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 60s linear infinite;
+}
+
+.marquee-item {
+    float: left;
+}
+
+@keyframes marquee {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+.card {
+    --start: 0;
+    position: relative;
+    z-index: 40;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 16px;
+}
+
+.card::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    border: 2px solid transparent;
+    background: linear-gradient(135deg, #00d4ff, #0066ff, #d946ef);
+    background-attachment: fixed;
+    mask: linear-gradient(#0000, #0000),
+        conic-gradient(from calc((var(--start) - 15) * 1deg),
+            rgba(0, 212, 255, 0.3) 0deg,
+            rgba(0, 212, 255, 1),
+            rgba(0, 212, 255, 0) 100deg);
+    mask-composite: intersect;
+    mask-clip: padding-box, border-box;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.glow {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(20px);
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.5) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card:hover .glow {
+    opacity: 1;
+}

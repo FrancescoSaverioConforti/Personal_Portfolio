@@ -1,0 +1,232 @@
+@layer components {
+    .navbar {
+        @apply fixed top-0 left-0 w-full py-4 px-5 md:px-20 z-[100];
+        backdrop-filter: blur(20px) saturate(180%);
+        background: linear-gradient(180deg,
+                rgba(10, 10, 31, 0.95) 0%,
+                rgba(10, 10, 31, 0.85) 100%);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .navbar.scrolled {
+        @apply py-3;
+        background: rgba(10, 10, 31, 0.98);
+        border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+        box-shadow:
+            0 4px 30px rgba(0, 212, 255, 0.1),
+            0 0 60px rgba(0, 212, 255, 0.05),
+            inset 0 -1px 0 rgba(0, 212, 255, 0.2);
+    }
+
+    .navbar .inner {
+        @apply w-full max-w-[1800px] mx-auto flex flex-nowrap items-center justify-between gap-2 md:gap-4;
+    }
+
+    /* LOGO */
+    .navbar .logo-container {
+        @apply flex items-center gap-2 transition-all duration-300;
+    }
+
+    .navbar .logo-container:hover {
+        transform: translateY(-2px);
+    }
+
+    .navbar .logo-image {
+        @apply w-5 h-5 md:w-6 md:h-6 object-contain;
+        filter: drop-shadow(0 0 6px rgba(0, 212, 255, 0.3));
+        transition: all 0.3s ease;
+    }
+
+    .navbar .logo-container:hover .logo-image {
+        transform: scale(1.1) rotate(5deg);
+        filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.6));
+    }
+
+    .navbar .logo-text {
+        @apply text-xs md:text-sm font-bold tracking-tight hidden xl:block;
+        white-space: nowrap !important;
+        font-family: "Space Grotesk", sans-serif;
+        background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .logo-container:hover .logo-text {
+        background: linear-gradient(135deg, #00d4ff 0%, #0066ff 50%, #d946ef 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* NAV LINKS */
+    .navbar .desktop {
+        @apply hidden lg:flex items-center flex-shrink min-w-0;
+    }
+
+    .navbar .nav-list {
+        @apply flex items-center gap-1 md:gap-4;
+        white-space: nowrap !important;
+    }
+
+    .navbar .nav-item {
+        @apply relative;
+    }
+
+    .navbar .nav-link {
+        @apply block px-2 md:px-3 py-2 rounded-lg relative overflow-hidden;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .navbar .nav-link:hover {
+        background: rgba(0, 212, 255, 0.05);
+    }
+
+    .navbar .nav-link-text {
+        @apply relative z-10 text-sm font-medium;
+        white-space: nowrap !important;
+        color: #e0e7ff;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .nav-link:hover .nav-link-text {
+        color: #ffffff;
+        text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    }
+
+    .navbar .nav-link-underline {
+        @apply absolute bottom-0 left-0 h-[2px] w-0;
+        background: linear-gradient(90deg, #00d4ff 0%, #0066ff 50%, #d946ef 100%);
+        box-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
+        transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .navbar .nav-link:hover .nav-link-underline {
+        width: 100%;
+    }
+
+    .navbar .nav-link-glow {
+        @apply absolute inset-0 rounded-lg;
+        background: radial-gradient(circle at center, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .navbar .nav-link:hover .nav-link-glow {
+        opacity: 1;
+    }
+
+    /* AI COMMAND BAR */
+    .navbar .ai-command-bar {
+        @apply hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full relative overflow-hidden cursor-pointer;
+        background: rgba(22, 33, 62, 0.6);
+        border: 1px solid rgba(102, 126, 234, 0.2);
+        backdrop-filter: blur(10px);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .navbar .ai-command-bar:hover {
+        border-color: rgba(0, 212, 255, 0.5);
+        background: rgba(22, 33, 62, 0.8);
+        transform: translateY(-2px);
+        box-shadow:
+            0 4px 20px rgba(0, 212, 255, 0.2),
+            inset 0 0 20px rgba(0, 212, 255, 0.05);
+    }
+
+    .navbar .ai-badge {
+        @apply flex items-center gap-1 px-2 py-1 rounded-full text-[10px] font-bold;
+        background: rgba(15, 15, 35, 0.8);
+        border: 1px solid rgba(0, 212, 255, 0.3);
+        color: #00d4ff;
+    }
+
+    .navbar .ai-badge-icon {
+        @apply inline-block;
+    }
+
+    .navbar .ai-command-bar:hover .ai-badge-icon {
+        animation: pulse 1s ease-in-out infinite;
+    }
+
+    .navbar .ai-command-text {
+        @apply text-xs font-medium;
+        color: #e0e7ff;
+    }
+
+    .navbar .ai-command-glow {
+        @apply absolute inset-0 rounded-full;
+        background: radial-gradient(circle, rgba(0, 212, 255, 0.2) 0%, transparent 70%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .navbar .ai-command-bar:hover .ai-command-glow {
+        opacity: 1;
+    }
+
+    /* CONTACT BUTTON */
+    .navbar .contact-btn {
+        @apply hidden md:flex relative;
+    }
+
+    .navbar .contact-btn-inner {
+        @apply flex items-center gap-1.5 px-4 md:px-5 py-2 rounded-xl font-semibold relative overflow-hidden;
+        background: linear-gradient(135deg, #00d4ff 0%, #0066ff 100%);
+        box-shadow:
+            0 4px 20px rgba(0, 212, 255, 0.4),
+            0 0 40px rgba(0, 212, 255, 0.2);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .navbar .contact-btn-inner:hover {
+        box-shadow:
+            0 6px 30px rgba(0, 212, 255, 0.6),
+            0 0 60px rgba(0, 212, 255, 0.4);
+        transform: translateY(-2px) scale(1.05);
+    }
+
+    .navbar .contact-btn-text {
+        @apply relative z-10 text-white text-sm;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar .contact-btn-icon {
+        @apply relative z-10 text-white;
+        width: 18px;
+        height: 18px;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .navbar .contact-btn-inner:hover .contact-btn-icon {
+        transform: translate(4px, -4px) rotate(45deg);
+    }
+
+    .navbar .contact-btn-shine {
+        @apply absolute top-0 w-full h-full;
+        left: -100%;
+        background: linear-gradient(90deg,
+                transparent,
+                rgba(255, 255, 255, 0.3),
+                transparent);
+        transition: left 0.6s ease;
+    }
+
+    .navbar .contact-btn-inner:hover .contact-btn-shine {
+        left: 100%;
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}

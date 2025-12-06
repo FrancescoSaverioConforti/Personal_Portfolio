@@ -1,0 +1,367 @@
+{
+  "languages": {
+    "en": "Inglese",
+    "it": "Italiano",
+    "es": "Spagnolo"
+  },
+  "nav": {
+    "about": "Chi Sono",
+    "skills": "Competenze",
+    "tech_stack": "Stack Tecnico",
+    "sub": "Il Mio Ecosistema Tecnico 🛸",
+    "work": "Progetti",
+    "cta_work": "I Miei Progetti",
+    "caseStudies": "Casi Studio",
+    "experience": "Esperienza",
+    "education": "Formazione",
+    "contact": "Contatti",
+    "ai_command": "Comando AI"
+  },
+  "hero": {
+    "title_start": "Ingegneria",
+    "title_end": "per il Futuro",
+    "subtitle_role": "Ingegnere AI & Robotica",
+    "subtitle_desc": "Progettazione di Sistemi di Controllo Intelligenti per il Mondo Reale",
+    "cta_work": "Vedi i Miei Lavori",
+    "cta_cv": "Scarica CV",
+    "cta_skills_dossier": "Dossier Competenze",
+    "portfolio_subtitle": "Portfolio Ingegneria AI & Software"
+  },
+  "pdf": {
+    "page": "Pagina",
+    "of": "di"
+  },
+  "about": {
+    "title": "Chi Sono",
+    "sub": "👋 Una breve introduzione",
+    "p1": "Sono Francesco Saverio Conforti, un Ingegnere dell'Automazione, AI & Robotica. Mi specializzo nella costruzione di sistemi di controllo intelligenti, digital twins e strumenti di automazione guidati dall'AI per ambienti industriali reali.",
+    "p2": "La mia esperienza spazia dalla programmazione PLC, automazione HVAC/BMS, reinforcement learning, simulazione robotica e machine learning applicato all'ottimizzazione dei sistemi. Mi piace unire l'ingegneria industriale con le moderne tecnologie AI come PyTorch, ROS/ROS2 e modelli di previsione avanzati.",
+    "p3": "Sono appassionato nel risolvere problemi ingegneristici complessi, progettare architetture scalabili e creare sistemi affidabili, efficienti e intelligenti. Oltre all'ingegneria, esploro simulazione, grafica 3D e ricerca robotica."
+  },
+  "words": {
+    "ai_models": "Modelli AI",
+    "autonomous_robots": "Robot Autonomi",
+    "smart_automation": "Automazione Smart",
+    "iot_systems": "Sistemi IoT",
+    "machine_learning": "Machine Learning",
+    "neural_networks": "Reti Neurali",
+    "control_systems": "Sistemi di Controllo",
+    "robotic_vision": "Visione Robotica"
+  },
+  "tech_stack_section": {
+    "title": "AI, Robotica e Automazione — Il Mio Stack Tecnico",
+    "sub": "🧠 Tecnologie che uso per costruire sistemi intelligenti"
+  },
+  "experience": {
+    "title": "Percorso Professionale",
+    "sub": "💼 La mia carriera",
+    "responsibilities": "Responsabilità Principali",
+    "maticmind_zenita": {
+      "title": "Automation Engineer",
+      "company": "Maticmind S.p.A",
+      "date": "15/Novembre/2023 - Presente",
+      "company_sector": "System Integrator italiano operante nel settore ICT. Progetta, integra e gestisce soluzioni tecnologiche innovative per mezzo di competenze specialistiche in ambito Networking, Cyber Security, Digital Workplace, Data Center, Cloud, Enterprise Application e Automation/IoT.",
+      "review": "Lavorare in Maticmind–Zenita mi ha permesso di contribuire allo sviluppo e all'ottimizzazione di sistemi di automazione industriale avanzati. Ho avuto l'opportunità di lavorare su sfide ingegneristiche complesse, collaborare con team multidisciplinari e supportare progetti che impattano direttamente l'efficienza produttiva e l'innovazione tecnologica.",
+      "responsibilities": [
+        "Sviluppo di software di automazione per simulazioni di impianti industriali e sistemi di controllo in tempo reale.",
+        "Programmazione PLC (Siemens, Loytec, Beckhoff) e risoluzione dei problemi logici di automazione.",
+        "Progettazione e analisi di architetture di automazione industriale e flussi di lavoro produttivi.",
+        "Esperienza con sistemi SCADA/HMI e integrazione di dispositivi di campo.",
+        "Progettazione di base di quadri elettrici e comprensione degli schemi elettrici industriali.",
+        "Disegno CAD e creazione di disegni tecnici per componenti di automazione e impianti industriali.",
+        "Analisi dati e scripting per l'automazione utilizzando Python per il monitoraggio e l'ottimizzazione dei processi.",
+        "Capacità di collaborare con team di ingegneria interfunzionali e supportare attività di project management.",
+        "Forti capacità di problem-solving applicate all'ottimizzazione dei sistemi, diagnostica e miglioramento dei processi.",
+        "Familiarità con protocolli di comunicazione industriale (Modbus, OPC UA, Profinet)."
+      ]
+    },
+    "maticmind_internship": {
+      "title": "Tirocinio sviluppatore automazione",
+      "company": "Maticmind S.p.A",
+      "date": "15/Maggio/2023 - 15/Novembre/2023",
+      "company_sector": "System Integrator italiano operante nel settore ICT. Progetta, integra e gestisce soluzioni tecnologiche innovative per mezzo di competenze specialistiche in ambito Networking, Cyber Security, Digital Workplace, Data Center, Cloud, Enterprise Application e Automation/IoT.",
+      "review": "Il mio tirocinio in Maticmind mi ha permesso di acquisire esperienza pratica nello sviluppo e ottimizzazione di sistemi di automazione industriale. Ho avuto l'opportunità di lavorare su progetti ingegneristici reali, collaborare con ingegneri senior e contribuire alla progettazione e simulazione di processi automatizzati. Questa esperienza ha rafforzato le mie basi tecniche e migliorato la mia capacità di risolvere problemi complessi in ambienti industriali moderni.",
+      "responsibilities": [
+        "Sviluppato soluzioni software per la simulazione di sistemi di automazione industriale, garantendo una modellazione accurata dei processi reali.",
+        "Condotto analisi dettagliate, progettazione e ottimizzazione di architetture di impianti di automazione per supportare requisiti ingegneristici e operativi.",
+        "Collaborato strettamente con team interfunzionali per supportare l'esecuzione dei progetti, contribuendo alla gestione delle attività, decisioni tecniche e coordinamento del flusso di lavoro.",
+        "Implementato miglioramenti e attività di debugging per migliorare le prestazioni, l'affidabilità e la manutenibilità dei sistemi negli ambienti di automazione.",
+        "Fornito assistenza tecnica e documentazione per facilitare il trasferimento di conoscenze e supportare il miglioramento continuo nei progetti di automazione."
+      ]
+    }
+  },
+  "education": {
+    "title": "Formazione",
+    "sub": "🎓 Percorso Accademico",
+    "key_focus": "Aree Chiave",
+    "certifications_title": "Certificazioni Professionali",
+    "sapienza": {
+      "degree": "Laurea Magistrale in Artificial Intelligence and Robotics",
+      "university": "Università degli Studi Roma La Sapienza",
+      "date": "2023 - Presente",
+      "description": "Studi avanzati in AI e robotica con focus su machine learning, sistemi autonomi e controllo intelligente. Sviluppo di competenze in tecnologie all'avanguardia per applicazioni industriali e di ricerca.",
+      "keyAreas": [
+        "Programmazione avanzata in C++ e Python per applicazioni AI",
+        "Progettazione e sviluppo di software di intelligenza artificiale",
+        "Simulazione e controllo robotico utilizzando ROS/ROS2",
+        "Tecniche di machine learning e deep learning",
+        "Sistemi autonomi e agenti intelligenti",
+        "Computer vision e sensor fusion"
+      ]
+    },
+    "roma_tre": {
+      "degree": "Laurea Triennale in Ingegneria Informatica e dell'Automazione",
+      "university": "Università degli Studi Roma Tre",
+      "date": "2019 - 2023",
+      "description": "Solida base in informatica, automazione e sistemi di controllo. Acquisizione di forti competenze di programmazione e comprensione dei principi di automazione industriale.",
+      "keyAreas": [
+        "Linguaggi di programmazione: C, C#, Java",
+        "Progettazione e sviluppo software",
+        "Sistemi di controllo e automazione",
+        "Automazione industriale e programmazione PLC",
+        "Sistemi embedded e microcontrollori",
+        "Strutture dati e algoritmi"
+      ]
+    }
+  },
+  "skills": {
+    "title": "Competenze",
+    "sub": "Competenze Chiave e Livelli di Esperienza 🚀",
+    "categories": {
+      "programming": "Programmazione",
+      "it": "Tecnologie dell'informazione",
+      "data": "Analisi dei Dati",
+      "soft": "Competenze Relazionali",
+      "languages": "Lingue",
+      "names": {
+        "c": "C",
+        "c_sharp": "C#",
+        "cpp": "C++",
+        "python": "Python",
+        "java": "Java",
+        "javascript": "Javascript",
+        "ai_ml": "AI & Machine Learning",
+        "wireless_iot": "Wireless & IoT",
+        "software_dev": "Sviluppo Software",
+        "html_css": "HTML & CSS",
+        "documentation": "Documentazione",
+        "mathematics": "Matematica",
+        "statistics": "Statistica",
+        "benchmarking": "Benchmarking",
+        "teamwork": "Lavoro di squadra",
+        "problem_solving": "Problem Solving",
+        "planning": "Pianificazione",
+        "reporting": "Reporting",
+        "italian": "Italiano",
+        "spanish": "Spagnolo",
+        "english": "Inglese"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contattami",
+    "sub": "Costruiamo qualcosa insieme",
+    "name": "Nome Completo",
+    "email": "Indirizzo Email",
+    "message": "Il tuo messaggio",
+    "send": "Invia Messaggio",
+    "sending": "Invio in corso...",
+    "success": "Grazie per il tuo messaggio 😃",
+    "error": "Non ho ricevuto il tuo messaggio 😢"
+  },
+  "footer": {
+    "copyright": "Tutti i diritti riservati."
+  },
+  "cv": {
+    "title": "FORMATO EUROPEO\nPER IL CURRICULUM\nVITAE",
+    "page": "Pagina",
+    "cv_of": "Curriculum vitae di",
+    "sections": {
+      "personal_info": "INFORMAZIONI PERSONALI",
+      "experience": "ESPERIENZA LAVORATIVA",
+      "education": "ISTRUZIONE E FORMAZIONE",
+      "personal_skills": "CAPACITÀ E COMPETENZE\nPERSONALI",
+      "technical_skills": "CAPACITÀ E COMPETENZE\nTECNICHE",
+      "certifications": "CERTIFICAZIONI",
+      "driving_license": "PATENTE O PATENTI",
+      "additional_info": "ULTERIORI INFORMAZIONI",
+      "attachments": "ALLEGATI"
+    },
+    "labels": {
+      "technologies": "Tecnologie",
+      "name": "Nome",
+      "address": "Indirizzo",
+      "phone": "Telefono",
+      "email": "E-mail",
+      "nationality": "Nazionalità",
+      "date_of_birth": "Data di nascita",
+      "date_from_to": "• Date (da – a)",
+      "employer_name": "• Nome e indirizzo del datore di\nlavoro",
+      "company_sector": "• Tipo di azienda o settore",
+      "job_type": "• Tipo di impiego",
+      "main_duties": "• Principali mansioni e\nresponsabilità",
+      "education_dates": "• Date (da – a)",
+      "institution_name": "• Nome e tipo di istituto di\nistruzione\no formazione",
+      "key_subjects": "• Principali materie / abilità\nprofessionali oggetto dello\nstudio",
+      "qualification": "• Qualifica conseguita",
+      "national_level": "• Livello nella classificazione\nnazionale (se pertinente)",
+      "mother_tongue": "MADRELINGUA",
+      "other_languages": "ALTRE LINGUE",
+      "reading_skills": "   - Capacità di lettura",
+      "writing_skills": "   - Capacità di scrittura",
+      "speaking_skills": "   - Capacità di espressione\n   orale",
+      "gender": "Sesso"
+    },
+    "values": {
+      "nationality": "Italiana",
+      "gender": "Maschile",
+      "date_placeholder": "[ Giorno, mese, anno ]",
+      "italian": "Italiano",
+      "english": "• Inglese",
+      "spanish": "• Spagnolo",
+      "skill_level_good": "Buono",
+      "driving_license_b": "Patente B",
+      "additional_info_placeholder": "[ Inserire qui ogni altra informazione pertinente, ad esempio\npersone di riferimento, referenze ecc. ]",
+      "attachments_placeholder": "[ Se del caso, enumerare gli allegati al CV. ]"
+    }
+  },
+  "projects": {
+    "hvac_twin": {
+      "title": "Digital-twin sistema di controllo HVAC ed elettrico",
+      "role": "Automation Engineer",
+      "result": [
+        "Ottimizzazione dei costi dell'edificio",
+        "Miglioramento del rilevamento guasti",
+        "Previsione avanzata dei costi"
+      ],
+      "dossier_desc": "Descrizione discorsiva del progetto Digital Twin HVAC..."
+    },
+    "bridge_monitoring": {
+      "title": "Sistema di monitoraggio ponti",
+      "role": "Software Engineer",
+      "result": [
+        "Dashboard in tempo reale per il rilevamento anomalie"
+      ],
+      "dossier_desc": "Descrizione discorsiva del progetto Monitoraggio Ponti..."
+    },
+    "tiago_robot": {
+      "title": "Navigazione a Controllo Vocale ed Esplorazione Autonoma su Robot TIAGo",
+      "role": "Robotics & AI Engineer",
+      "result": [
+        "Implementato un sistema HRI multimodale che abilita navigazione e controllo del movimento tramite comandi vocali, input testuale e interazione da terminale.",
+        "Integrata navigazione autonoma con evitamento ostacoli dinamico e localizzazione indoor affidabile.",
+        "Sviluppato un comportamento di esplorazione personalizzato che permette al robot di mappare spazi sconosciuti aggiornando la griglia di occupazione in tempo reale.",
+        "Automatizzato il processo di salvataggio mappe durante l'esplorazione per riproducibilità e ricostruzione dell'ambiente.",
+        "Creata una navigazione semantica che mappa nomi di stanze in linguaggio naturale a coordinate per un'interazione uomo-robot intuitiva."
+      ],
+      "dossier_desc": "Descrizione discorsiva del progetto Robot TIAGo..."
+    },
+    "koopa_forecasting": {
+      "title": "Koopa Advanced: Pipeline di Previsione Consumo Energetico",
+      "role": "AI Developer",
+      "result": [
+        "Implementata pipeline end-to-end per pre-processare e allineare dati meteo con serie temporali di consumo energetico.",
+        "Usato Koopa per tracciare esperimenti, loggare metriche di training/validazione e monitorare norme dei gradienti.",
+        "Addestrato e ottimizzato modello deep learning in PyTorch per previsione consumo energetico a breve termine usando domanda storica e feature meteo.",
+        "Ottenute dinamiche di training stabili e performance di validazione consistenti, con metriche documentate e storico esperimenti gestito tramite Koopa."
+      ],
+      "dossier_desc": "Descrizione discorsiva del progetto Previsione Koopa..."
+    },
+    "maze_rl": {
+      "title": "Reinforcement Learning in Ambiente Labirinto Personalizzato",
+      "role": "Reinforcement Learning Engineer",
+      "result": [
+        "Progettato ambiente labirinto personalizzato con curriculum learning tramite ostacoli progressivamente crescenti.",
+        "Implementati agenti DDPG e SAC con policy convoluzionali per azioni di navigazione discrete.",
+        "Integrato replay buffer prioritizzato basato su HGR per focalizzare l'apprendimento su transizioni ad alto errore TD.",
+        "Valutate performance con benchmark multi-run, multi-livello e multi-goal per confrontare robustezza e tassi di successo tra DDPG e SAC."
+      ],
+      "dossier_desc": "Descrizione discorsiva del progetto Maze RL..."
+    },
+    "cultural_classification": {
+      "title": "Classificazione Multiclasse di Beni Culturali usando ML Tradizionale e Transformers",
+      "role": "NLP Engineer",
+      "result": [
+        "Implementato sistema di classificazione a tre classi (Agnostico, Rappresentativo, Esclusivo) usando ensemble ML tradizionale e transformer basato su DistilBERT.",
+        "Ingegnerizzate feature ispirate al dominio, incluso un cultural_score basato su keyword, per migliorare performance ML tradizionale.",
+        "Sviluppato classificatore ensemble combinando Logistic Regression, Random Forest e Linear SVM con voto a maggioranza per migliorare robustezza.",
+        "Fine-tuning di DistilBERT su metadati culturali, ottenendo migliore comprensione contestuale e il più alto F1-score macro tra i modelli testati.",
+        "Confrontate performance dei modelli su accuratezza, F1-score macro, costo computazionale e tempo di inferenza, evidenziando trade-off tra velocità e potenza rappresentativa."
+      ],
+      "dossier_desc": "Descrizione discorsiva del progetto Classificazione Culturale..."
+    },
+    "archaic_translation": {
+      "title": "Traduzione Italiano Arcaico-Moderno con Prompt Engineering",
+      "role": "NLP Researcher",
+      "result": [
+        "Progettate e confrontate diverse strategie di prompting per gestire la trasformazione linguistica da italiano arcaico a moderno.",
+        "Valutati due diversi LLM analizzando accuratezza traduzione tramite scoring umano e metriche visive.",
+        "Costruiti strumenti analitici per studiare distribuzioni dei punteggi e comportamento del modello sotto diversi tipi di prompt.",
+        "Identificati limiti di piccoli set di valutazione, vincoli rate API e bias di dominio, e proposti miglioramenti come dataset più grandi e fine-tuning."
+      ],
+      "dossier_desc": "Descrizione discorsiva del progetto Traduzione Arcaica..."
+    },
+    "thermal_drift": {
+      "title": "Previsione Deriva Termica in Robotica Industriale usando Reti Transformer",
+      "role": "Machine Learning Researcher",
+      "result": [
+        "Sviluppata pipeline sperimentale completa per modellare deriva termomeccanica lenta in piattaforma robotica a 3-DOF.",
+        "Eseguita analisi spettrale e statistica dei segnali termici per identificare pattern di deformazione a lungo termine.",
+        "Ingegnerizzato set robusto di feature termiche, temporali e autoregressive adattate per previsione deriva.",
+        "Confrontati modelli ML classici e architettura Transformer personalizzata, rivelando comportamenti specifici per asse e diverse capacità di generalizzazione.",
+        "Fornite raccomandazioni per migliore posizionamento sensori e strategie di modellazione per migliorare compensazione deriva in robot industriali."
+      ],
+      "dossier_desc": "Descrizione discorsiva del progetto Deriva Termica..."
+    },
+    "image_generation": {
+      "title": "Generazione Immagini e Classificazione Reale-vs-Falso usando GAN, Stable Diffusion e VGG16",
+      "role": "Computer Vision Engineer",
+      "result": [
+        "Sviluppata pipeline completa per confrontare immagini COCO reali con generate usando GAN personalizzata e Stable Diffusion.",
+        "Implementata GAN da zero con cinque layer convoluzionali e risoluzione output 64×64, tracciando progressione training su 100 epoche.",
+        "Usato Stable Diffusion 2.1 per generare immagini alta qualità da caption COCO per confronto con output GAN.",
+        "Costruito classificatore binario combinando estrazione feature VGG16 con testa SVM personalizzata, addestrando modelli SVM separati per immagini 64×64, 256×256 e compresse.",
+        "Valutate multiple condizioni di generazione e preprocessing (GAN/Stable a diverse risoluzioni e livelli compressione) e prodotto benchmark completo usando accuracy, precision, recall e F1-score.",
+        "Osservato che Stable Diffusion a 256×256 forniva campioni falsi più distinguibili, ottenendo punteggi classificazione più alti, mentre immagini GAN bassa risoluzione riducevano significativamente performance classificatore."
+      ],
+      "dossier_desc": "Descrizione discorsiva del progetto Generazione Immagini..."
+    },
+    "vehicle_simulation": {
+      "title": "Simulazione Guida Veicolo con Sterzo Multi-Input, Controllo Motore e Fisica Ruote",
+      "role": "Unity Simulation Developer",
+      "result": [
+        "Sviluppato sistema controllo veicolo completo integrando tastiera, joystick su schermo, joystick fisico e input sterzo accelerometro/giroscopio.",
+        "Implementato modulo acceleratore supportando marcia avanti, logica retromarcia e cambio dinamico tra sorgenti input (pulsante, asse joystick, frecce tastiera).",
+        "Costruito sistema freno a mano personalizzato con logica toggle e controlli sicurezza, permettendo blocco stazionario e frenata graduale basata su input utente.",
+        "Creato modello guida completo usando WheelColliders con calcoli coppia, forza frenata e angolo sterzo, sincronizzati a mesh ruote visibili per comportamento realistico.",
+        "Aggiunto sterzo giroscopico per dispositivi mobili, abilitando controllo direzionale basato su inclinazione tramite API sensori hardware Unity.",
+        "Integrato volante basato su UI con valori angolo limitati, permettendo cambio dinamico tra modalità sterzo (volante touch, accelerometro, joystick).",
+        "Progettati componenti input modulari per permettere sostituzione rapida o combinazione metodi controllo per testare multiple configurazioni guida."
+      ],
+      "dossier_desc": "Descrizione discorsiva del progetto Simulazione Veicolo..."
+    }
+  },
+  "case_studies": {
+    "title": "Casi Studio dei Progetti",
+    "sub": "🔧 Progetti ingegneristici reali su cui ho lavorato",
+    "search_placeholder": "Cerca progetti per nome o tecnologia...",
+    "role": "RUOLO",
+    "tech_used": "TECNOLOGIE UTILIZZATE",
+    "results": "RISULTATI"
+  },
+  "showcase": {
+    "title": "Progetti e Lavori",
+    "project1": {
+      "title": "Deep Convolutional GAN addestrata su COCO — Progetto di Generazione Immagini",
+      "desc": "Una DCGAN PyTorch completa capace di generare immagini sintetiche dal rumore. Include training multi-GPU, checkpointing, tracciamento delle loss e preprocessing del dataset."
+    },
+    "project2": {
+      "title": "Simulazione Meridiana 3D con Posizionamento Solare in Tempo Reale — Realizzata con WebGL",
+      "desc": "Una simulazione WebGL live che calcola vettori solari reali per ombre accurate e illuminazione dinamica."
+    },
+    "project3": {
+      "title": "YC Directory - Un'App Vetrina per Startup",
+      "desc": "Una directory startup che aiuta i founder a esplorare, filtrare e ricercare aziende supportate da YC in modo efficiente."
+    }
+  }
+}

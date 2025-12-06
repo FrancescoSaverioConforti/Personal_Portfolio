@@ -1,0 +1,44 @@
+@layer components {
+    .footer {
+        @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-20 xl:px-20 flex items-center justify-center;
+
+        .footer-container {
+            @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0 w-full;
+        }
+
+        p {
+            @apply text-center md:text-start cursor-pointer transition-all duration-300;
+
+            &:hover {
+                color: white;
+                transform: translateX(4px);
+            }
+        }
+
+        .socials {
+            @apply flex items-center justify-center gap-5;
+
+            .icon {
+                @apply border border-purple-50/30 bg-black-100/80 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-300;
+                backdrop-filter: blur(10px);
+
+                &:hover {
+                    background: linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3));
+                    border-color: rgba(102, 126, 234, 0.6);
+                    box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+                    transform: translateY(-4px) rotate(5deg);
+                }
+            }
+
+            img {
+                @apply inline-block;
+                filter: brightness(0.9);
+                transition: filter 0.3s ease;
+            }
+
+            .icon:hover img {
+                filter: brightness(1.2);
+            }
+        }
+    }
+}

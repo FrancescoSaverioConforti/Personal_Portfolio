@@ -1,0 +1,2 @@
+❌ src/locales/en.json is INVALID JSON.
+Expected double-quoted property name in JSON at position 14590 (line 206 column 1)
