@@ -26,8 +26,8 @@ const GlowCard = ({ card, index, children }) => {
       {/* Glow background */}
       <div className="glow"></div>
 
-      {/* Grid Pattern */}
-      <div className="absolute inset-0 bg-[url('/images/grid.png')] opacity-10 pointer-events-none" />
+
+
 
       {/* Holographic Border */}
       <div className="absolute inset-0 rounded-xl border border-white/10 group-hover:border-cyan-primary/50 transition-colors duration-500" />

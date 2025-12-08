@@ -4,7 +4,6 @@ import gsap from "gsap";
 import { useState } from "react";
 
 import { words } from "../constants";
-import HeroExperience from "../components/models/hero_models/HeroExperience";
 import { generateCV, generateSkillsCard } from "../utils/cvGenerator";
 
 const ButtonPrimary = ({ text, onClick }) => (
@@ -21,6 +20,7 @@ const ButtonPrimary = ({ text, onClick }) => (
     {text}
   </button>
 );
+
 const ButtonSecondary = ({ text, onClick, disabled, loading }) => (
   <button
     onClick={onClick}
@@ -42,6 +42,7 @@ const Hero = () => {
   const { t } = useTranslation();
   const [isDownloading, setIsDownloading] = useState(false);
   const [isSkillsDownloading, setIsSkillsDownloading] = useState(false);
+  const base = import.meta.env.BASE_URL;
 
   const handleDownloadCV = async () => {
     setIsDownloading(true);
@@ -75,38 +76,74 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative overflow-hidden">
+      {/* Video di Sfondo */}
+      <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-70"
+        >
+          <source src={`${base}images/knight.mp4`} type="video/mp4" />
+        </video>
+      </div>
 
-
+      {/* Contenuto */}
       <div className="hero-layout">
-        {/* LEFT Content */}
         <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
           <div className="flex flex-col gap-7">
             <div className="hero-text">
-              <h1>
-                {t('hero.title_start')}
-                <span className="slide">
-                  <span className="wrapper">
-                    {words.map((word, index) => (
-                      <span
-                        key={index}
-                        className="flex items-center md:gap-3 gap-1 pb-2"
-                      >
-                        <img
-                          src={word.imgPath}
-                          alt={t(word.text)}
-                          className="xl:size-12 md:size-10 size-10 md:p-2 p-1 rounded-full bg-white-50"
-                        />
-                        <span>{t(word.text)}</span>
-                      </span>
-                    ))}
+              {/* Layout Mobile: 3 righe */}
+              <div className="mobile-title-layout md:hidden">
+                <h1 className="hero-line-1">{t('hero.title_start')}</h1>
+                <h1 className="hero-line-2">
+                  <span className="slide">
+                    <span className="wrapper">
+                      {words.map((word, index) => (
+                        <span
+                          key={index}
+                          className="flex items-center gap-1"
+                        >
+                          <img
+                            src={word.imgPath}
+                            alt={t(word.text)}
+                          />
+                          <span>{t(word.text)}</span>
+                        </span>
+                      ))}
+                    </span>
                   </span>
-                </span>
-              </h1>
+                </h1>
+                <h1 className="hero-line-3">{t('hero.title_end')}</h1>
+              </div>
 
-              <h1>{t('hero.title_end')}</h1>
+              {/* Layout Desktop: 2 righe (originale) */}
+              <div className="desktop-title-layout hidden md:block">
+                <h1>
+                  {t('hero.title_start')}
+                  <span className="slide">
+                    <span className="wrapper">
+                      {words.map((word, index) => (
+                        <span
+                          key={index}
+                          className="flex items-center md:gap-3 gap-1 pb-2"
+                        >
+                          <img
+                            src={word.imgPath}
+                            alt={t(word.text)}
+                          />
+                          <span>{t(word.text)}</span>
+                        </span>
+                      ))}
+                    </span>
+                  </span>
+                </h1>
+                <h1>{t('hero.title_end')}</h1>
+              </div>
             </div>
 
-            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
+            <p className="text-white-50 text-base md:text-xl relative z-10 pointer-events-none">
               {t('hero.subtitle_role')}
               <br />
               {t('hero.subtitle_desc')}
@@ -132,21 +169,12 @@ const Hero = () => {
                 loading={isSkillsDownloading}
               />
             </div>
-
           </div>
         </header>
-
-        {/* RIGHT 3D Model */}
-        <figure>
-          <div className="hero-3d-layout">
-            <HeroExperience />
-          </div>
-        </figure>
       </div>
-
-
     </section>
   );
 };
 
 export default Hero;
+

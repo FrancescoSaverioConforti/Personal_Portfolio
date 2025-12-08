@@ -4,17 +4,55 @@
     }
 
     .hero-text {
-        @apply flex flex-col justify-center md:text-[72px] text-[36px] font-bold relative z-10 pointer-events-none;
+        @apply flex flex-col justify-center font-bold relative z-10 pointer-events-none;
         font-family: "Space Grotesk", sans-serif;
         letter-spacing: -0.02em;
+        font-size: 36px;
+
+        /* Tablet */
+        @media (min-width: 768px) {
+            font-size: 60px;
+        }
+
+        /* Desktop */
+        @media (min-width: 1280px) {
+            font-size: 72px;
+        }
 
         img {
-            @apply size-10 md:size-12 object-contain;
+            @apply object-contain rounded-full bg-white-50;
+            width: 24px;
+            height: 24px;
+            padding: 4px;
             animation: neural-pulse 2s ease-in-out infinite;
         }
 
+        /* Tablet */
+        @media (min-width: 768px) {
+            img {
+                width: 40px;
+                height: 40px;
+                padding: 8px;
+            }
+        }
+
+        /* Desktop Large */
+        @media (min-width: 1280px) {
+            img {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
         .slide {
-            @apply absolute pt-0 px-2 md:px-5 py-[30px] h-[56px] md:h-[94px] md:translate-y-1 translate-y-0 overflow-hidden;
+            @apply absolute pt-0 px-2 md:px-5 py-[20px] overflow-hidden;
+            height: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .slide {
+                height: 94px;
+            }
         }
     }
 
@@ -55,7 +93,7 @@
     }
 }
 
-/* Hero text slider starts */
+/* Hero text slider */
 .slide {
     display: inline-block;
     flex-direction: column;
@@ -102,4 +140,58 @@
     }
 }
 
-/* Hero Text slider ends */
+/* -----------------------------------------------------------
+   MOBILE: 3 RIGHE LAYOUT (<768px)
+   Riga 1: "Ingegneria"
+   Riga 2: [icona rotante + testo]
+   Riga 3: "per il futuro"
+----------------------------------------------------------- */
+@media (max-width: 767px) {
+    .mobile-title-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .mobile-title-layout .hero-line-1,
+    .mobile-title-layout .hero-line-3 {
+        font-size: 32px;
+        line-height: 1.2;
+        display: block;
+    }
+
+    .mobile-title-layout .hero-line-2 {
+        display: flex;
+        align-items: center;
+        height: 38px;
+        position: relative;
+    }
+
+    .mobile-title-layout .hero-line-2 .slide {
+        height: 36px !important;
+        padding: 0 4px;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .mobile-title-layout .hero-line-2 img {
+        width: 22px !important;
+        height: 22px !important;
+        padding: 3px !important;
+        flex-shrink: 0;
+    }
+
+    .mobile-title-layout .hero-line-2 .wrapper span {
+        font-size: 28px;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+}
+
+/* Desktop mantiene il layout originale a 2 righe */
+@media (min-width: 768px) {
+    .desktop-title-layout h1 {
+        display: block;
+    }
+}

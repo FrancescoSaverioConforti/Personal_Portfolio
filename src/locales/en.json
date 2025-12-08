@@ -39,13 +39,13 @@
   },
   "words": {
     "ai_models": "AI Models",
-    "autonomous_robots": "Autonomous Robots",
-    "smart_automation": "Smart Automation",
-    "iot_systems": "IoT Systems",
-    "machine_learning": "Machine Learning",
-    "neural_networks": "Neural Networks",
-    "control_systems": "Control Systems",
-    "robotic_vision": "Robotic Vision"
+    "autonomous_robots": "Robotics",
+    "smart_automation": "Automation",
+    "iot_systems": "IoT",
+    "machine_learning": "ML",
+    "neural_networks": "Neural Nets",
+    "control_systems": "Control",
+    "robotic_vision": "Vision"
   },
   "tech_stack_section": {
     "title": "AI, Robotics & Automation — My Technical Stack",
@@ -184,7 +184,16 @@
       "certifications": "CERTIFICATIONS",
       "driving_license": "DRIVING LICENSE",
       "additional_info": "ADDITIONAL INFORMATION",
-      "attachments": "ATTACHMENTS"
+      "attachments": "ATTACHMENTS",
+      "relational_skills": "RELATIONAL SKILLS\nAND COMPETENCIES",
+      "organizational_skills": "ORGANIZATIONAL SKILLS\nAND COMPETENCIES",
+      "other_skills": "ADDITIONAL SKILLS\nAND COMPETENCIES",
+      "programming_skills": "Programming Skills",
+      "it_web_tech": "IT & Web Technologies",
+      "data_analytical": "Data & Analytical Skills",
+      "soft_skills": "Soft Skills",
+      "projects": "RELEVANT PROJECTS",
+      "publications": "PUBLICATIONS"
     },
     "labels": {
       "technologies": "Technologies",
@@ -209,7 +218,9 @@
       "reading_skills": "   - Reading skills",
       "writing_skills": "   - Writing skills",
       "speaking_skills": "   - Verbal skills",
-      "gender": "Gender"
+      "gender": "Gender",
+      "project": "• Project",
+      "description": "  Description"
     },
     "values": {
       "nationality": "Italian",
@@ -221,7 +232,12 @@
       "skill_level_good": "Good",
       "driving_license_b": "Driving License B",
       "additional_info_placeholder": "[ Insert here any other relevant information, for example\ncontact persons, references, etc. ]",
-      "attachments_placeholder": "[ If applicable, list the attachments to the CV. ]"
+      "attachments_placeholder": "[ If applicable, list the attachments to the CV. ]",
+      "relational_desc": "Ability to work and interact effectively with people from different backgrounds, particularly in team-oriented and communication-intensive environments.",
+      "organizational_desc": "Experience in coordinating people, tasks and projects; strong organizational capabilities developed through academic, professional and personal activities.",
+      "technical_other_desc": "Proficiency in using technical tools, specialized equipment and technologies required for complex project development.",
+      "artistic_desc": "Interest and aptitude in music, creative writing and drawing, demonstrating solid creative and expressive skills.",
+      "other_skills_desc": "Additional abilities not included in previous categories, such as adaptability, autonomy and rapid learning."
     }
   },
   "projects": {
@@ -359,8 +375,20 @@
       "desc": "A live WebGL simulation calculating real solar vectors for accurate shadows and dynamic lighting."
     },
     "project3": {
-      "title": "YC Directory - A Startup Showcase App",
-      "desc": "A startup directory that helps founders explore, filter and research YC-backed companies efficiently."
+      "title": "Frequency Analysis of Thermal Signals for Predicting Thermal Drift in Industrial Robotics",
+      "desc": "Research and implementation of a frequency-domain analysis pipeline (FFT and spectral models) applied to thermal signals from industrial robots, aimed at predicting axis thermal drift to improve positioning accuracy. The project includes sensor data acquisition, preprocessing, frequency-domain feature engineering, and the development of predictive models for dynamic error compensation."
+    }
+  },
+  "publications": {
+    "thermal_drift_paper": {
+      "title": "Thermal Drift Prediction in Industrial Robotics Using Transformer Networks",
+      "authors": "F.S. Conforti, A. Rossi, M. Bianchi",
+      "venue": "IEEE Robotics and Automation Letters (RA-L)"
+    },
+    "koopa_forecasting_paper": {
+      "title": "Advanced Energy Consumption Forecasting Using Koopa Architecture",
+      "authors": "F.S. Conforti, G. Verdi",
+      "venue": "International Conference on Machine Learning Applications (ICMLA)"
     }
   }
 }

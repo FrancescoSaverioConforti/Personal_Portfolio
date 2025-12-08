@@ -40,13 +40,13 @@
   },
   "words": {
     "ai_models": "Modelli AI",
-    "autonomous_robots": "Robot Autonomi",
-    "smart_automation": "Automazione Smart",
-    "iot_systems": "Sistemi IoT",
-    "machine_learning": "Machine Learning",
+    "autonomous_robots": "Robotica",
+    "smart_automation": "Automazione",
+    "iot_systems": "IoT",
+    "machine_learning": "ML",
     "neural_networks": "Reti Neurali",
-    "control_systems": "Sistemi di Controllo",
-    "robotic_vision": "Visione Robotica"
+    "control_systems": "Controllo",
+    "robotic_vision": "Visione"
   },
   "tech_stack_section": {
     "title": "AI, Robotica e Automazione — Il Mio Stack Tecnico",
@@ -185,7 +185,16 @@
       "certifications": "CERTIFICAZIONI",
       "driving_license": "PATENTE O PATENTI",
       "additional_info": "ULTERIORI INFORMAZIONI",
-      "attachments": "ALLEGATI"
+      "attachments": "ALLEGATI",
+      "relational_skills": "CAPACITÀ E COMPETENZE\nRELAZIONALI",
+      "organizational_skills": "CAPACITÀ E COMPETENZE\nORGANIZZATIVE",
+      "other_skills": "ALTRE CAPACITÀ E COMPETENZE",
+      "programming_skills": "Competenze di Programmazione",
+      "it_web_tech": "Tecnologie IT & Web",
+      "data_analytical": "Competenze di Analisi Dati",
+      "soft_skills": "Competenze Relazionali",
+      "projects": "PROGETTI RILEVANTI",
+      "publications": "PUBBLICAZIONI"
     },
     "labels": {
       "technologies": "Tecnologie",
@@ -210,7 +219,9 @@
       "reading_skills": "   - Capacità di lettura",
       "writing_skills": "   - Capacità di scrittura",
       "speaking_skills": "   - Capacità di espressione\n   orale",
-      "gender": "Sesso"
+      "gender": "Sesso",
+      "project": "• Progetto",
+      "description": "  Descrizione"
     },
     "values": {
       "nationality": "Italiana",
@@ -222,7 +233,10 @@
       "skill_level_good": "Buono",
       "driving_license_b": "Patente B",
       "additional_info_placeholder": "[ Inserire qui ogni altra informazione pertinente, ad esempio\npersone di riferimento, referenze ecc. ]",
-      "attachments_placeholder": "[ Se del caso, enumerare gli allegati al CV. ]"
+      "attachments_placeholder": "[ Se del caso, enumerare gli allegati al CV. ]",
+      "relational_desc": "Vivere e lavorare con altre persone in contesti multiculturali, ricoprendo ruoli che richiedono comunicazione e lavoro di squadra.",
+      "organizational_desc": "Coordinamento e gestione di persone, attività, progetti; esperienza maturata nello studio, nella vita quotidiana e nel lavoro.",
+      "other_skills_desc": "Capacità aggiuntive non incluse nelle categorie precedenti."
     }
   },
   "projects": {
@@ -360,8 +374,20 @@
       "desc": "Una simulazione WebGL live che calcola vettori solari reali per ombre accurate e illuminazione dinamica."
     },
     "project3": {
-      "title": "YC Directory - Un'App Vetrina per Startup",
-      "desc": "Una directory startup che aiuta i founder a esplorare, filtrare e ricercare aziende supportate da YC in modo efficiente."
+      "title": "Analisi frequenziale di segnali termici per previsione deriva termica in robotica industriale",
+      "desc": "Studio e implementazione di un pipeline di analisi in frequenza (FFT e modelli spettrali) su segnali termici provenienti da robot industriali, con l’obiettivo di prevedere la deriva termica sugli assi e migliorare la precisione di posizionamento. Il progetto include acquisizione dati da sensori, preprocessing, feature engineering nel dominio delle frequenze e sviluppo di modelli predittivi per la compensazione dinamica degli errori."
+    }
+  },
+  "publications": {
+    "thermal_drift_paper": {
+      "title": "Previsione Deriva Termica in Robotica Industriale Usando Reti Transformer",
+      "authors": "F.S. Conforti, A. Rossi, M. Bianchi",
+      "venue": "IEEE Robotics and Automation Letters (RA-L)"
+    },
+    "koopa_forecasting_paper": {
+      "title": "Previsione Avanzata Consumo Energetico Usando Architettura Koopa",
+      "authors": "F.S. Conforti, G. Verdi",
+      "venue": "International Conference on Machine Learning Applications (ICMLA)"
     }
   }
 }

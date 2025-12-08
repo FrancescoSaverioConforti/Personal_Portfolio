@@ -44,7 +44,7 @@
     }
 
     .navbar .logo-text {
-        @apply text-xs md:text-sm font-bold tracking-tight hidden xl:block;
+        @apply text-xs md:text-sm font-bold tracking-tight xl:block;
         white-space: nowrap !important;
         font-family: "Space Grotesk", sans-serif;
         background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%);

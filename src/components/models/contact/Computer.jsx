@@ -1,8 +1,10 @@
 import { useGLTF } from "@react-three/drei";
 
 export function Computer(props) {
+  const base = import.meta.env.BASE_URL;
+
   const { nodes, materials } = useGLTF(
-    "/models/computer-optimized-transformed.glb"
+    `${base}models/computer-optimized-transformed.glb`
   );
 
   return (
@@ -25,6 +27,9 @@ export function Computer(props) {
   );
 }
 
-useGLTF.preload("/models/computer-optimized-transformed.glb");
+useGLTF.preload(
+  new URL("../models/computer-optimized-transformed.glb", import.meta.url).href
+);
+
 
 export default Computer;

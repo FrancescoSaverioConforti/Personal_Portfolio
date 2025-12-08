@@ -39,14 +39,14 @@
     "p3": "Me apasiona resolver problemas de ingeniería complejos, diseñar arquitecturas escalables y crear sistemas que sean confiables, eficientes e inteligentes. Fuera de la ingeniería, exploro la simulación, los gráficos 3D y la investigación en robótica."
   },
   "words": {
-    "ai_models": "Modelos de IA",
-    "autonomous_robots": "Robots Autónomos",
-    "smart_automation": "Automatización Inteligente",
-    "iot_systems": "Sistemas IoT",
-    "machine_learning": "Machine Learning",
+    "ai_models": "Modelos IA",
+    "autonomous_robots": "Robótica",
+    "smart_automation": "Automatización",
+    "iot_systems": "IoT",
+    "machine_learning": "ML",
     "neural_networks": "Redes Neuronales",
-    "control_systems": "Sistemas de Control",
-    "robotic_vision": "Visión Robótica"
+    "control_systems": "Control",
+    "robotic_vision": "Visión"
   },
   "tech_stack_section": {
     "title": "IA, Robótica y Automatización — Mi Stack Técnico",
@@ -185,7 +185,16 @@
       "certifications": "CERTIFICACIONES",
       "driving_license": "PERMISO DE CONDUCIR",
       "additional_info": "INFORMACIÓN ADICIONAL",
-      "attachments": "ANEXOS"
+      "attachments": "ANEXOS",
+      "relational_skills": "CAPACIDADES Y COMPETENCIAS\nRELACIONALES",
+      "organizational_skills": "CAPACIDADES Y COMPETENCIAS\nORGANIZATIVAS",
+      "other_skills": "OTRAS CAPACIDADES Y COMPETENCIAS",
+      "programming_skills": "Habilidades de Programación",
+      "it_web_tech": "Tecnologías IT & Web",
+      "data_analytical": "Habilidades de Análisis de Datos",
+      "soft_skills": "Habilidades Blandas",
+      "projects": "PROYECTOS RELEVANTES",
+      "publications": "PUBLICACIONES"
     },
     "labels": {
       "technologies": "Tecnologías",
@@ -210,7 +219,9 @@
       "reading_skills": "   - Capacidad de lectura",
       "writing_skills": "   - Capacidad de escritura",
       "speaking_skills": "   - Capacidad de expresión\n   oral",
-      "gender": "Sexo"
+      "gender": "Sexo",
+      "project": "• Proyecto",
+      "description": "  Descripción"
     },
     "values": {
       "nationality": "Italiana",
@@ -222,7 +233,12 @@
       "skill_level_good": "Bueno",
       "driving_license_b": "Permiso de Conducir B",
       "additional_info_placeholder": "[ Insertar aquí cualquier otra información pertinente, por ejemplo\npersonas de contacto, referencias, etc. ]",
-      "attachments_placeholder": "[ Si procede, enumerar los anexos al CV. ]"
+      "attachments_placeholder": "[ Si procede, enumerar los anexos al CV. ]",
+      "relational_desc": "Ability to work and interact effectively with people from different backgrounds, particularly in team-oriented and communication-intensive environments.",
+      "organizational_desc": "Experience in coordinating people, tasks and projects; strong organizational capabilities developed through academic, professional and personal activities.",
+      "technical_other_desc": "Proficiency in using technical tools, specialized equipment and technologies required for complex project development.",
+      "artistic_desc": "Interest and aptitude in music, creative writing and drawing, demonstrating solid creative and expressive skills.",
+      "other_skills_desc": "Additional abilities not included in previous categories, such as adaptability, autonomy and rapid learning."
     }
   },
   "projects": {
@@ -360,8 +376,20 @@
       "desc": "Una simulación WebGL en vivo que calcula vectores solares reales para sombras precisas e iluminación dinámica."
     },
     "project3": {
-      "title": "YC Directory - Una Aplicación Escaparate de Startups",
-      "desc": "Un directorio de startups que ayuda a los fundadores a explorar, filtrar e investigar empresas respaldadas por YC de manera eficiente."
+      "title": "Análisis frecuencial de señales térmicas para la predicción de deriva térmica en robótica industrial",
+      "desc": "Estudio e implementación de una canalización de análisis en frecuencia (FFT y modelos espectrales) aplicada a señales térmicas procedentes de robots industriales, con el objetivo de predecir la deriva térmica en los ejes y mejorar la precisión de posicionamiento. El proyecto incluye adquisición de datos de sensores, preprocesamiento, ingeniería de características en el dominio frecuencial y desarrollo de modelos predictivos para la compensación dinámica de errores."
+    }
+  },
+  "publications": {
+    "thermal_drift_paper": {
+      "title": "Predicción de Deriva Térmica en Robótica Industrial Usando Redes Transformer",
+      "authors": "F.S. Conforti, A. Rossi, M. Bianchi",
+      "venue": "IEEE Robotics and Automation Letters (RA-L)"
+    },
+    "koopa_forecasting_paper": {
+      "title": "Pronóstico Avanzado de Consumo de Energía Usando Arquitectura Koopa",
+      "authors": "F.S. Conforti, G. Verdi",
+      "venue": "International Conference on Machine Learning Applications (ICMLA)"
     }
   }
 }

@@ -2,15 +2,15 @@ import pdfMake from "pdfmake/build/pdfmake";
 import pdfFonts from "pdfmake/build/vfs_fonts";
 import i18n from "../i18n";
 
-import { expCards, educationCards, certifications, projects, skillsProgress } from "../constants";
+import { expCards, educationCards, certifications, projects, publications, skillsProgress } from "../constants";
 
 pdfMake.vfs = pdfFonts.vfs;
 
 const CONTACT_INFO = {
     name: "Francesco Saverio Conforti",
     email: "fsaverio9050@gmail.com",
-    phone: "+39 3667485007",
-    location: "VIA MAGLIANO 65, 00060 FORMELLO ROMA",
+    phone: "+39",
+    location: "FORMELLO ROMA",
     dateOfBirth: "16/12/2000",
     linkedin: "linkedin.com/in/francesco-conforti",
     github: "github.com/francesco-conforti",
@@ -18,6 +18,7 @@ const CONTACT_INFO = {
 
 export const generateCV = async () => {
     const t = i18n.t;
+    const base = import.meta.env.BASE_URL;
     const translate = (key) => {
         try {
             const v = t(key, { returnObjects: true });
@@ -31,15 +32,15 @@ export const generateCV = async () => {
     // EUROPASS CONSTANTS
     // ============================
     const PAGE_MARGINS = [60, 70, 56, 56];
-    const LABEL_WIDTH = 185; // Increased to accommodate Spanish labels
+    const VERTICAL_LINE_X = 250;
+    const LABEL_WIDTH = VERTICAL_LINE_X - PAGE_MARGINS[0] - 10; // ~180px, con 10px di margine dalla linea
     const VALUE_WIDTH = "*";
     const TITLE_FONT = 14;
     const BODY_FONT = 10;
     const SECTION_FONT = 11;
     const EU_BLUE = "#003399";
     const GOLD = "#FFCC00";
-    const VERTICAL_LINE_X = 250; // Shifted right (was 220)
-    const VALUE_MARGIN_LEFT = 10;
+    const VALUE_MARGIN_LEFT = 15;
 
     // ============================
     // EU FLAG con SVG
@@ -162,6 +163,7 @@ export const generateCV = async () => {
     // ============================
     const row = (label, value, labelBold = false) => {
         const isBullet = label.startsWith('•');
+
         return {
             columns: [
                 {
@@ -170,17 +172,20 @@ export const generateCV = async () => {
                     fontSize: BODY_FONT,
                     bold: labelBold || (isBullet && !label.includes('\n')),
                     margin: [0, 0, 5, 0],
-                    alignment: 'left'
+                    alignment: 'left',
+                    lineHeight: 1.1,
+                    preserveLeadingSpaces: true,
                 },
                 {
-                    width: '*',
+                    width: VALUE_WIDTH,
                     text: value || '',
                     fontSize: BODY_FONT,
                     alignment: 'left',
-                    margin: [VALUE_MARGIN_LEFT, 0, 0, 0]
+                    margin: [VALUE_MARGIN_LEFT, 0, 0, 0],
+                    lineHeight: 1.15
                 }
             ],
-            margin: [0, 1.5, 0, 1.5]
+            margin: [0, 3, 0, 3]
         };
     };
 
@@ -205,7 +210,7 @@ export const generateCV = async () => {
         ...sectionHeader(translate("cv.sections.personal_info")),
         row(translate("cv.labels.name"), CONTACT_INFO.name),
         row(translate("cv.labels.address"), CONTACT_INFO.location),
-        row(translate("cv.labels.phone"), CONTACT_INFO.phone),
+        //row(translate("cv.labels.phone"), CONTACT_INFO.phone),
         row(translate("cv.labels.email"), CONTACT_INFO.email),
         row(translate("cv.labels.nationality"), translate("cv.values.nationality")),
         row(translate("cv.labels.gender"), translate("cv.values.gender")),
@@ -281,21 +286,134 @@ export const generateCV = async () => {
     ];
 
     // ============================
-    // TECHNICAL SKILLS
+    // SKILL NAME TRANSLATION MAP
     // ============================
-    const technicalSkills = [
-        ...sectionHeader(translate("cv.sections.technical_skills")),
+    const skillNameMap = {
+        "C": "skills.categories.names.c",
+        "C#": "skills.categories.names.c_sharp",
+        "C++": "skills.categories.names.cpp",
+        "Python": "skills.categories.names.python",
+        "Java": "skills.categories.names.java",
+        "Javascript": "skills.categories.names.javascript",
+        "AI & Machine Learning": "skills.categories.names.ai_ml",
+        "Wireless & IoT": "skills.categories.names.wireless_iot",
+        "Software Development": "skills.categories.names.software_dev",
+        "HTML & CSS": "skills.categories.names.html_css",
+        "Documentation": "skills.categories.names.documentation",
+        "Mathematics": "skills.categories.names.mathematics",
+        "Statistics": "skills.categories.names.statistics",
+        "Benchmarking": "skills.categories.names.benchmarking",
+        "Teamwork": "skills.categories.names.teamwork",
+        "Problem Solving": "skills.categories.names.problem_solving",
+        "Planning": "skills.categories.names.planning",
+        "Reporting": "skills.categories.names.reporting",
+        "Italiano": "skills.categories.names.italian",
+        "Spagnolo": "skills.categories.names.spanish",
+        "Inglese": "skills.categories.names.english"
+    };
+
+    // ============================
+    // PROGRAMMING SKILLS
+    // ============================
+    const programmingSkills = [
+        ...sectionHeader(translate("cv.sections.programming_skills")),
         {
-            ...row("", [
-                "Python, C, C++, Java, JavaScript",
-                "PyTorch, TensorFlow, Scikit-learn, OpenCV",
-                "ROS/ROS2, Gazebo",
-                "PLC Siemens & Beckhoff",
-                "Modbus, OPC UA, MQTT, KNX, BACnet"
-            ].join("\n")),
-            margin: [0, -37, 0, 1.5]
-        }
+            ...row("", skillsProgress.programming.map(skill => {
+                const trKey = skillNameMap[skill.name];
+                return trKey ? translate(trKey) : skill.name;
+            }).join(", ")),
+            margin: [0, -22, 0, 1.5]
+        },
     ];
+
+    // ============================
+    // IT & WEB TECHNOLOGIES
+    // ============================
+    const itSkills = [
+        ...sectionHeader(translate("cv.sections.it_web_tech")),
+        {
+            ...row("", skillsProgress.it.map(skill => {
+                const trKey = skillNameMap[skill.name];
+                return trKey ? translate(trKey) : skill.name;
+            }).join(", ")),
+            margin: [0, -22, 0, 1.5]
+        },
+    ];
+
+    // ============================
+    // DATA & ANALYTICAL SKILLS
+    // ============================
+    const dataSkills = [
+        ...sectionHeader(translate("cv.sections.data_analytical")),
+        {
+            ...row("", skillsProgress.data.map(skill => {
+                const trKey = skillNameMap[skill.name];
+                return trKey ? translate(trKey) : skill.name;
+            }).join(", ")),
+            margin: [0, -22, 0, 1.5]
+        },
+    ];
+
+    // ============================
+    // SOFT SKILLS
+    // ============================
+    const softSkills = [
+        ...sectionHeader(translate("cv.sections.soft_skills")),
+        {
+            ...row("", skillsProgress.soft.map(skill => {
+                const trKey = skillNameMap[skill.name];
+                return trKey ? translate(trKey) : skill.name;
+            }).join(", ")),
+            margin: [0, -22, 0, 1.5]
+        },
+    ];
+
+    // ============================
+    // PROJECTS SECTION
+    // ============================
+    const projectsSection = [
+        ...sectionHeader(translate("cv.sections.projects")),
+        ...projects.map(proj => ({
+            stack: [
+                row(
+                    translate("cv.labels.project"),
+                    translate(proj.title),
+                    true
+                ),
+                row(
+                    translate("cv.labels.technologies"),
+                    proj.tech.join(", ")
+                ),
+                row(
+                    translate("cv.labels.description"),
+                    translate(proj.dossier_desc)
+                ),
+                { text: "", margin: [0, 5, 0, 0] }
+            ],
+            unbreakable: true
+        }))
+    ];
+
+    // ============================
+    // PUBLICATIONS SECTION
+    // ============================
+    const publicationsSection = publications && publications.length > 0 ? [
+        ...sectionHeader(translate("cv.sections.publications")),
+        ...publications.map(pub => {
+            const pubText = [
+                translate(pub.authors),
+                `"${translate(pub.title)}"`,
+                translate(pub.venue),
+                pub.year.toString(),
+                pub.doi ? `DOI: ${pub.doi}` : null
+            ].filter(Boolean).join(", ");
+
+            return {
+                ...row("• ", pubText),
+                margin: [0, 3, 0, 8]
+            };
+        })
+    ] : [];
 
     // ============================
     // CERTIFICATIONS
@@ -312,23 +430,12 @@ export const generateCV = async () => {
     // ADDITIONAL SECTIONS
     // ============================
     const additionalSections = [
+        // PATENTE
         ...sectionHeader(translate("cv.sections.driving_license")),
         {
             ...row("", translate("cv.values.driving_license_b")),
             margin: [0, -22, 0, 1.5]
         },
-        /*    { text: "", margin: [0, 4, 0, 0] },
-            ...sectionHeader(translate("cv.sections.additional_info")),
-            {
-                ...row("", translate("cv.values.additional_info_placeholder")),
-                margin: [0, -6, 0, 1.5]
-            },
-            { text: "", margin: [0, 4, 0, 0] },
-            ...sectionHeader(translate("cv.sections.attachments")),
-            {
-                ...row("", translate("cv.values.attachments_placeholder")),
-                margin: [0, -6, 0, 1.5]
-            }*/
     ];
 
     // ============================
@@ -345,10 +452,16 @@ export const generateCV = async () => {
             ...personalInfo,
             ...experience,
             ...education,
+
             ...personalSkills,
-            ...technicalSkills,
+            ...programmingSkills,
+            ...itSkills,
+            ...dataSkills,
+            ...softSkills,
             ...certSection,
-            ...additionalSections
+            ...additionalSections,
+            ...projectsSection,
+            /*...publicationsSection*/
         ],
 
         defaultStyle: {
@@ -360,6 +473,8 @@ export const generateCV = async () => {
 
     pdfMake.createPdf(docDefinition).download("CV_Francesco_Conforti.pdf");
 };
+
+
 export const generateSkillsCard = async () => {
     const t = i18n.t;
     const translate = (key) => {
@@ -718,7 +833,7 @@ export const generateSkillsCard = async () => {
 
     let logoData = null;
     try {
-        logoData = await getBase64ImageFromURL("/images/logos/personal-logo.png");
+        logoData = await getBase64ImageFromURL("images/logos/personal-logo.png");
     } catch (e) {
         console.error("Failed to load logo", e);
     }

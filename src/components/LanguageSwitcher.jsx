@@ -5,11 +5,12 @@ const LanguageSwitcher = () => {
     const { t, i18n } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
+    const base = import.meta.env.BASE_URL;
 
     const languages = [
-        { code: 'en', flag: '/images/eng.png', name: 'languages.en' },
-        { code: 'it', flag: '/images/ita.png', name: 'languages.it' },
-        { code: 'es', flag: '/images/esp.png', name: 'languages.es' }
+        { code: 'en', flag: `${base}images/eng.png`, name: 'languages.en' },
+        { code: 'it', flag: `${base}images/ita.png`, name: 'languages.it' },
+        { code: 'es', flag: `${base}images/esp.png`, name: 'languages.es' }
     ];
 
     const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];

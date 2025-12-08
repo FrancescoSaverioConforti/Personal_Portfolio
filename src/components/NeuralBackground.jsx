@@ -129,6 +129,11 @@ const NeuralBackground = () => {
                     const maxDistance = 100;
 
                     if (distance < maxDistance) {
+                        // Skip connections if either particle is in hero section
+                        if (isInHeroSection(particles[i].y) || isInHeroSection(particles[j].y)) {
+                            continue;
+                        }
+
                         const opacity = (1 - distance / maxDistance) * 0.6;
 
                         ctx.save();
@@ -174,6 +179,13 @@ const NeuralBackground = () => {
             }
         };
 
+        const isInHeroSection = (y) => {
+            const heroSection = document.getElementById('hero');
+            if (!heroSection) return false;
+            const rect = heroSection.getBoundingClientRect();
+            return y >= rect.top && y <= rect.bottom;
+        };
+
         const animate = (timestamp) => {
             time = timestamp;
             ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -197,7 +209,10 @@ const NeuralBackground = () => {
 
             particles.forEach((particle) => {
                 particle.update(time);
-                particle.draw(time);
+                // Only draw particles outside hero section
+                if (!isInHeroSection(particle.y)) {
+                    particle.draw(time);
+                }
             });
 
             animationFrameId = requestAnimationFrame(animate);

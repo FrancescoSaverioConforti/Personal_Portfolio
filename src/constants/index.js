@@ -1,3 +1,4 @@
+const base = import.meta.env.BASE_URL;
 const navLinks = [
   {
     name: "nav.about",
@@ -30,69 +31,69 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "words.ai_models", imgPath: "/images/ai.svg" },
-  { text: "words.autonomous_robots", imgPath: "/images/robot.svg" },
-  { text: "words.smart_automation", imgPath: "/images/automation.svg" },
-  { text: "words.iot_systems", imgPath: "/images/iot.svg" },
-  { text: "words.machine_learning", imgPath: "/images/ml.svg" },
-  { text: "words.neural_networks", imgPath: "/images/neural.svg" },
-  { text: "words.control_systems", imgPath: "/images/control.svg" },
-  { text: "words.robotic_vision", imgPath: "/images/vision.svg" },
+  { text: "words.ai_models", imgPath: `${base}images/ai.svg` },
+  { text: "words.autonomous_robots", imgPath: `${base}images/robot.svg` },
+  { text: "words.smart_automation", imgPath: `${base}images/automation.svg` },
+  { text: "words.iot_systems", imgPath: `${base}images/iot.svg` },
+  { text: "words.machine_learning", imgPath: `${base}images/ml.svg` },
+  { text: "words.neural_networks", imgPath: `${base}images/neural.svg` },
+  { text: "words.control_systems", imgPath: `${base}images/control.svg` },
+  { text: "words.robotic_vision", imgPath: `${base}images/vision.svg` },
 ];
 
 
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/siemens.png",
+    imgPath: `${base}images/logos/siemens.png`,
   },
   {
-    imgPath: "/images/logos/beckoff.png",
+    imgPath: `${base}images/logos/beckoff.png`,
   },
   {
-    imgPath: "/images/logos/loytec.png",
+    imgPath: `${base}images/logos/loytec.png`,
   },
   {
-    imgPath: "/images/logos/bacnet.png",
+    imgPath: `${base}images/logos/bacnet.png`,
   },
   {
-    imgPath: "/images/logos/dali.png",
+    imgPath: `${base}images/logos/dali.png`,
   },
   {
-    imgPath: "/images/logos/knx.png",
+    imgPath: `${base}images/logos/knx.png`,
   },
   {
-    imgPath: "/images/logos/lora.png",
+    imgPath: `${base}images/logos/lora.png`,
   },
   {
-    imgPath: "/images/logos/modbus.png",
+    imgPath: `${base}images/logos/modbus.png`,
   },
   {
-    imgPath: "/images/logos/mqtt.png",
+    imgPath: `${base}images/logos/mqtt.png`,
   },
   {
-    imgPath: "/images/logos/bluetooth.png",
+    imgPath: `${base}images/logos/bluetooth.png`,
   },
   {
-    imgPath: "/images/logos/zigbee.png",
+    imgPath: `${base}images/logos/zigbee.png`,
   },
   {
-    imgPath: "/images/logos/Wi-Fi.png",
+    imgPath: `${base}images/logos/Wi-Fi.png`,
   },
   {
-    imgPath: "/images/logos/Ros.png",
+    imgPath: `${base}images/logos/Ros.png`,
   },
   {
-    imgPath: "/images/logos/pytorch.png",
+    imgPath: `${base}images/logos/pytorch.png`,
   },
   {
-    imgPath: "/images/logos/pandas.png",
+    imgPath: `${base}images/logos/pandas.png`,
   },
   {
-    imgPath: "/images/logos/opencv.png",
+    imgPath: `${base}images/logos/opencv.png`,
   },
   {
-    imgPath: "/images/logos/IEC-61131-3.png",
+    imgPath: `${base}images/logos/IEC-61131-3.png`,
   },
 ];
 
@@ -132,17 +133,17 @@ const skillsProgress = {
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
+    imgPath: `${base}images/seo.png`,
     title: "Quality Focus",
     desc: "Delivering high-quality results while maintaining attention to every detail.",
   },
   {
-    imgPath: "/images/chat.png",
+    imgPath: `${base}images/chat.png`,
     title: "Reliable Communication",
     desc: "Keeping you updated at every step to ensure transparency and clarity.",
   },
   {
-    imgPath: "/images/time.png",
+    imgPath: `${base}images/time.png`,
     title: "On-Time Delivery",
     desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
   },
@@ -151,55 +152,55 @@ const abilities = [
 const techStackImgs = [
   {
     name: "React Developer",
-    imgPath: "/images/logos/react.png",
+    imgPath: `${base}images/logos/react.png`,
   },
   {
     name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
+    imgPath: `${base}images/logos/python.svg`,
   },
   {
     name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
+    imgPath: `${base}images/logos/node.png`,
   },
   {
     name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
+    imgPath: `${base}images/logos/three.png`,
   },
   {
     name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
+    imgPath: `${base}images/logos/git.svg`,
   },
 ];
 
 const techStackIcons = [
   {
     name: "C developer",
-    modelPath: "/models/C.glb",
+    modelPath: `${base}models/C.glb`,
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
     name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
+    modelPath: `${base}models/python-transformed.glb`,
     scale: 0.8,
     rotation: [0, 0, 0],
     desc: "Deep Learning · CNN · RNN · RL · GPU training & model deployment"
   },
   {
     name: "Java Developer",
-    modelPath: "/models/Java.glb",
+    modelPath: `${base}models/Java.glb`,
     scale: 0.8,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
     name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
+    modelPath: `${base}models/three.js-transformed.glb`,
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
     name: "ROS & ROS2 Developer",
-    modelPath: "/models/ROS.glb",
+    modelPath: `${base}models/ROS.glb`,
     scale: 0.22,
     rotation: [0, -Math.PI / 2, 0],
   },
@@ -214,6 +215,8 @@ const expCards = [
     company_sector: "experience.maticmind_zenita.company_sector",
     review: "experience.maticmind_zenita.review",
     responsibilities: "experience.maticmind_zenita.responsibilities",
+    logoPath: `${base}images/maticmind-zenita.png`,
+    logoFallback: "Maticmind Zenita"
   },
   {
     id: 2,
@@ -223,6 +226,8 @@ const expCards = [
     company_sector: "experience.maticmind_internship.company_sector",
     review: "experience.maticmind_internship.review",
     responsibilities: "experience.maticmind_internship.responsibilities",
+    logoPath: `${base}images/maticmind.png`,
+    logoFallback: "Maticmind"
   },
 ];
 
@@ -234,6 +239,8 @@ const educationCards = [
     date: "education.sapienza.date",
     description: "education.sapienza.description",
     keyAreas: "education.sapienza.keyAreas",
+    logoPath: `${base}images/Uniroma1.png`,
+    logoFallback: "Sapienza"
   },
   {
     id: 2,
@@ -242,6 +249,8 @@ const educationCards = [
     date: "education.roma_tre.date",
     description: "education.roma_tre.description",
     keyAreas: "education.roma_tre.keyAreas",
+    logoPath: `${base}images/Uniroma3.png`,
+    logoFallback: "Roma Tre"
   },
 ];
 
@@ -342,22 +351,40 @@ const projects = [
   },
 ];
 
+const publications = [
+  {
+    title: "publications.thermal_drift_paper.title",
+    authors: "publications.thermal_drift_paper.authors",
+    venue: "publications.thermal_drift_paper.venue",
+    year: 2025,
+    doi: "10.1234/example.2025.001",
+    link: "https://arxiv.org/example" // opzionale
+  },
+  {
+    title: "publications.koopa_forecasting_paper.title",
+    authors: "publications.koopa_forecasting_paper.authors",
+    venue: "publications.koopa_forecasting_paper.venue",
+    year: 2024,
+    doi: null,
+    link: "https://example.com/paper"
+  }
+];
 
 
 const socialImgs = [
   {
     name: "github",
-    imgPath: "/images/logos/git.svg",
+    imgPath: `${base}images/logos/git.svg`,
     link: "https://github.com/FS1612",
   },
   {
     name: "linkedin",
-    imgPath: "/images/linkedin.png",
+    imgPath: `${base}images/linkedin.png`,
     link: "https://www.linkedin.com/in/francesco-saverio-conforti-660b3a277/",
   },
   {
     name: "insta",
-    imgPath: "/images/insta.png",
+    imgPath: `${base}images/insta.png`,
     link: "https://www.instagram.com/fra.save16/",
   },
 ];
@@ -367,14 +394,14 @@ const showcaseProjects = [
     id: 1,
     titleKey: "showcase.project1.title",
     descKey: "showcase.project1.desc",
-    image: "/images/project1.png",
+    image: `${base}images/project1.png`,
     type: "image",
   },
   {
     id: 2,
     titleKey: "showcase.project2.title",
     descKey: "showcase.project2.desc",
-    video: "/images/project2.mp4",
+    video: `${base}images/project2.mp4`,
     type: "video",
     bgColor: "#FFEFDB",
   },
@@ -382,7 +409,7 @@ const showcaseProjects = [
     id: 3,
     titleKey: "showcase.project3.title",
     descKey: "showcase.project3.desc",
-    image: "/images/project3.png",
+    image: `${base}images/project3.png`,
     type: "image",
     bgColor: "#FFE7EB",
   },
@@ -404,4 +431,5 @@ export {
   techStackImgs,
   navLinks,
   skillsProgress,
+  publications
 };

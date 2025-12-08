@@ -3,6 +3,7 @@ import TitleHeader from "../components/TitleHeader";
 
 const AboutMe = () => {
   const { t } = useTranslation();
+  const base = import.meta.env.BASE_URL;
 
   return (
     <section id="about" className="flex-center section-padding">
@@ -42,15 +43,13 @@ const AboutMe = () => {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-400/50 via-blue-500/30 to-purple-500/50 p-[2px]">
                 <div className="w-full h-full bg-black-200 rounded-2xl overflow-hidden">
                   <img
-                    src="/images/me.png"
+                    src={`${base}images/me.png`}
                     alt="Francesco Saverio Conforti"
                     className="w-full h-full object-contain object-center"
                   />
                 </div>
               </div>
 
-              {/* Grid overlay */}
-              <div className="absolute inset-0 bg-[url('/images/grid.png')] opacity-5 pointer-events-none rounded-2xl" />
 
               {/* Corner accents */}
               <div className="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-cyan-400/60 rounded-tl-2xl" />
