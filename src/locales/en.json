@@ -125,7 +125,7 @@
   },
   "skills": {
     "title": "Skills",
-    "sub": "Core Competencies & Proficiency Levels 🚀",
+    "sub": "🚀Core Competencies & Proficiency Levels ",
     "categories": {
       "programming": "Programming",
       "it": "Information Technologies",
@@ -242,118 +242,125 @@
   },
   "projects": {
     "hvac_twin": {
-      "title": "Hvac and electrical system control system digital-twin",
+      "title": "HVAC and Electrical System Control Digital Twin",
       "role": "Automation Engineer",
       "result": [
-        "Optimization of building costs",
-        "fault detection improved",
-        "advanced costs forecasting"
+        "Detailed digital replication of building systems",
+        "Real-time energy flow analysis and consumption mapping",
+        "Interactive monitoring dashboard with anomaly detection",
+        "3D visualization and dynamic control of building actuators",
+        "MQTT-based communication for efficient command execution and diagnostics"
       ],
-      "dossier_desc": "Narrative description of the HVAC Digital Twin project..."
+      "dossier_desc": "The project involved the design and implementation of an advanced digital twin of the building, aimed at accurately modeling both the architectural structure and the electrical and hydraulic systems. The primary objective was to achieve a rigorous understanding of the distribution of utilities and their energy flows, in order to precisely identify the areas and systems with the highest energy consumption. To this end, dedicated electrical and hydraulic meters were installed and integrated, enabling the reconstruction and detailed redesign of the building's overall energy profile. The collected data feed a monitoring platform that uses interactive charts for real-time visualization of consumption, complemented by notification systems for anomalous conditions such as over- or under-consumption, over- and under-voltage, and potential short circuits. The three-dimensional model also includes highly accurate representations of all controllable components, including valves, lighting units, and fan coil systems, which are dynamically animated in response to user commands. The communication infrastructure relies on the MQTT protocol, through which the interface exchanges data with the field PLC: the PLC manages the execution of commands, controls the actuators, and returns updated states and diagnostic alarms to the interface. The result is an integrated system enabling advanced supervision, timely diagnostics, and comprehensive energy analysis of the entire building."
     },
     "bridge_monitoring": {
-      "title": "Bridge monitoring system",
+      "title": "Bridge Monitoring System",
       "role": "Software Engineer",
       "result": [
-        "Real-time dashboard for anomaly detection"
+        "Real-time dashboard for anomaly detection",
+        "Continuous acquisition of structural parameters",
+        "Multisensor integration for advanced analysis",
+        "MQTT-based data transmission to the supervision center",
+        "Support for predictive maintenance of infrastructures"
       ],
-      "dossier_desc": "Narrative description of the Bridge Monitoring project..."
+      "dossier_desc": "The project involved the development of an advanced structural monitoring system for bridges, based on the use of a PLC dedicated to acquiring real-time data from a heterogeneous set of sensors. The instrumentation included temperature probes, inclinometers, and crack meters, selected to ensure continuous assessment of the physical and mechanical conditions of the infrastructures. The PLC collects the sensor data directly from the field, processes it, and transmits both real-time readings and aggregated data to the central monitoring platform via the MQTT protocol. The system was designed to enable predictive maintenance strategies, allowing for early detection of structural anomalies and supporting decision-making processes for the management and safety of monitored bridges."
     },
     "tiago_robot": {
-      "title": "Voice-Controlled Navigation & Autonomous Exploration on TIAGo Robot",
+      "title": "Voice-Controlled Navigation and Autonomous Exploration on TIAGo Robot",
       "role": "Robotics & AI Engineer",
       "result": [
-        "Implemented a multimodal HRI system enabling navigation and motion control through voice commands, text input, and terminal-based interaction.",
-        "Integrated autonomous navigation with dynamic obstacle avoidance and reliable indoor localization.",
-        "Developed a custom exploration behavior allowing the robot to map unknown spaces while updating the occupancy grid in real time.",
-        "Automated the process of saving maps during exploration for reproducibility and environment reconstruction.",
-        "Created a semantic navigation layer mapping natural language room names to coordinate frames for intuitive human–robot interaction."
+        "Implemented a multimodal HRI system enabling movement control through natural-language voice commands, text input, and terminal-based fallback interfaces.",
+        "Integrated autonomous navigation using Nav2 with AMCL localization, dynamic obstacle avoidance, reliable path planning, and pose accuracy within 15 cm.",
+        "Developed a custom autonomous exploration behavior using sector-based LIDAR analysis, allowing the robot to map unknown environments and update the occupancy grid in real time.",
+        "Automated periodic map saving during SLAM (every 60 seconds) to ensure reproducibility, continuity between sessions, and persistent world modeling.",
+        "Created a semantic navigation layer mapping natural-language room names to metric coordinates, enabling intuitive commands such as 'go to the kitchen'."
       ],
-      "dossier_desc": "Narrative description of the TIAGo Robot project..."
+      "dossier_desc": "The project focused on building an integrated human-robot interaction and autonomous navigation system for the TIAGo mobile service robot. The HRI layer processes Italian voice commands using natural-language understanding and provides alternative modalities such as text-based and terminal inputs for operational robustness. The system architecture unifies perception, navigation, and mapping: LIDAR data supports both SLAM Toolbox for map construction and Nav2 for dynamic obstacle avoidance, local control, and path planning. Autonomous exploration leverages a lightweight behavior-based strategy that evaluates LIDAR sectors to identify free space and incrementally extend the map. A custom automatic map saver ensures continuous persistence of spatial knowledge. Semantic navigation links linguistic labels to metric poses, enabling high-level commands without requiring coordinate specifications. Experimental results show 88% speech recognition accuracy, 90% navigation success rate, sub-15 cm localization error, safe obstacle avoidance in dynamic environments, and the ability to autonomously explore more than 80% of accessible spaces, validating the effective integration of HRI and RBC components."
     },
     "koopa_forecasting": {
       "title": "Koopa Advanced: Energy Consumption Forecasting Pipeline",
       "role": "AI Developer",
       "result": [
-        "Implemented an end-to-end pipeline to preprocess and align weather data with energy consumption time series.",
-        "Used Koopa to track experiments, log training/validation metrics, and monitor gradient norms during model training.",
-        "Trained and tuned a deep learning model in PyTorch for short-term energy consumption forecasting using historical demand and weather features.",
-        "Achieved stable training dynamics and consistent validation performance, with documented metrics and experiment history managed through Koopa."
+        "End-to-end pipeline for preprocessing, cleaning, and temporal alignment of energy consumption and meteorological data.",
+        "Comprehensive experiment tracking in Koopa with metric logging, gradient monitoring, and configuration versioning.",
+        "Deep learning model in PyTorch optimized for short-term energy consumption forecasting.",
+        "Stable and reproducible validation performance with systematic comparison across architectures and training setups.",
+        "Structured framework for hyperparameter tuning and continuous improvement of forecasting accuracy."
       ],
-      "dossier_desc": "Narrative description of the Koopa Forecasting project..."
+      "dossier_desc": "The project involved the development of an advanced pipeline for forecasting energy consumption by integrating historical demand data with external meteorological features. The preprocessing stage included temporal synchronization, missing-value imputation, normalization, and the engineering of auxiliary features to support predictive modeling. Koopa was adopted as the experiment tracking platform, enabling structured logging of training and validation metrics, model configurations, gradient norms, and optimization parameters. The forecasting model was implemented in PyTorch, evaluating multiple neural network architectures and optimization strategies through systematic experimentation. The pipeline ensures robustness, full reproducibility of experimental results, and clear traceability across iterations, providing a professional workflow for energy forecasting based on deep learning techniques and heterogeneous datasets."
     },
     "maze_rl": {
       "title": "Reinforcement Learning in a Custom Maze Environment",
       "role": "Reinforcement Learning Engineer",
       "result": [
-        "Designed a custom maze environment with curriculum learning via progressively increasing obstacles.",
-        "Implemented DDPG and SAC agents with convolutional policies for discrete navigation actions.",
-        "Integrated an HGR-based prioritized replay buffer to focus learning on high TD-error transitions.",
-        "Evaluated performance with multi-run, multi-level, and multi-goal benchmarks to compare robustness and success rates between DDPG and SAC."
+        "Designed a custom maze environment with curriculum learning based on progressively increasing difficulty (obstacles, topological complexity, goal distance).",
+        "Implemented DDPG and SAC agents with convolutional policies for spatial feature extraction and discrete navigation actions.",
+        "Integrated a prioritized replay buffer using HGR (High-Gradient Replay) to emphasize transitions with high TD error and accelerate convergence.",
+        "Performed extensive evaluation through multi-run, multi-level, and multi-goal benchmarks to compare robustness, stability, and success rates between DDPG and SAC.",
+        "Analyzed emergent behaviors and learning curves, highlighting differences between deterministic (DDPG) and stochastic (SAC) policies in partially observable environments."
       ],
-      "dossier_desc": "Narrative description of the Maze RL project..."
+      "dossier_desc": "The project focused on developing a fully customized reinforcement learning environment consisting of maze configurations with progressively increasing difficulty, designed to support curriculum learning strategies and evaluate the agents’ ability to generalize to unseen scenarios. The environment incorporates dynamic obstacles and variable topologies, enabling the modeling of navigation tasks with growing structural complexity. Two deep RL agents—DDPG and SAC—were implemented with convolutional policies capable of extracting spatial representations directly from the maze observations. Training relies on a prioritized replay buffer based on High-Gradient Replay, allowing the learner to focus on transitions with high TD error and improving sample efficiency. The evaluation phase encompasses multi-run, multi-level, and multi-goal benchmarks intended to measure robustness, stability, and goal-reaching performance. The analysis of results highlights the different behaviors of deterministic DDPG and stochastic SAC, revealing contrasts in exploration dynamics, gradient sensitivity, and the overall quality of the learned policies."
     },
     "cultural_classification": {
-      "title": "Multiclass Classification of Cultural Items Using Traditional ML and Transformers",
+      "title": "Multiclass Classification of Cultural Heritage Items using Traditional ML and Transformers",
       "role": "NLP Engineer",
       "result": [
-        "Implemented a three-class classification system (Agnostic, Representative, Exclusive) using both a traditional ML ensemble and a DistilBERT-based transformer.",
-        "Engineered domain-inspired features, including a keyword-driven cultural_score, to improve traditional ML performance.",
-        "Developed an ensemble classifier combining Logistic Regression, Random Forest, and Linear SVM with majority voting to enhance robustness.",
-        "Fine-tuned DistilBERT on cultural metadata, achieving improved contextual understanding and the highest macro F1-score among tested models.",
-        "Compared model performance across accuracy, macro F1-score, computational cost, and inference time, highlighting trade-offs between speed and representational power."
+        "Implemented a three-class classification system (Agnostic, Representative, Exclusive) using both traditional ML and transformer-based models.",
+        "Engineered domain-inspired features including a keyword-based cultural_score to enhance classical ML pipelines with TF-IDF.",
+        "Developed an ensemble of Logistic Regression, Random Forest, and Linear SVM using majority voting to increase robustness.",
+        "Fine-tuned DistilBERT on cultural metadata, achieving the highest macro F1-score thanks to its stronger contextual understanding.",
+        "Compared models in terms of accuracy, macro F1-score, computational cost, and inference time, highlighting key trade-offs."
       ],
-      "dossier_desc": "Narrative description of the Cultural Classification project..."
+      "dossier_desc": "This project addresses the automatic classification of cultural heritage items into three categories—Agnostic, Representative, and Exclusive—using a hybrid pipeline that combines traditional machine learning and transformer architectures. The classical pipeline integrates TF-IDF representations with handcrafted domain features, including a cultural_score derived from semantically relevant keywords, as reported in MNLP HW1. The ensemble combines Logistic Regression, Random Forest, and Linear SVM to improve stability and reduce variance. In parallel, DistilBERT was fine-tuned on item metadata following the approach presented in the NLP Presentation, with per-epoch evaluation using accuracy and macro F1. Results show that DistilBERT clearly outperforms the ensemble in semantic modeling, whereas traditional models offer superior efficiency. The comparative analysis highlights the trade-offs between interpretability, computational cost, and predictive power in cultural-information classification."
     },
     "archaic_translation": {
-      "title": "Archaic-to-Modern Italian Translation with Prompt Engineering",
+      "title": "Archaic-to-Modern Italian Translation via Prompt Engineering",
       "role": "NLP Researcher",
       "result": [
-        "Designed and compared multiple prompting strategies to handle the linguistic transformation from archaic to modern Italian.",
-        "Evaluated two different LLMs by analyzing translation accuracy using human scoring and visual metrics.",
-        "Built analytical tools to study score distributions and model behaviour under different prompt types.",
-        "Identified the limitations of small evaluation sets, API rate constraints, and domain bias, and proposed improvements such as larger datasets and fine-tuning."
+        "Designed and compared multiple prompting strategies (zero-shot, few-shot, explanatory) for transforming archaic Italian into modern Italian.",
+        "Evaluated two LLMs through human scoring, qualitative analysis, and visualization-based metrics.",
+        "Built analytical tools to study score distributions and model behavior under varying prompts.",
+        "Identified evaluation-set limitations, API rate constraints, and domain biases, proposing improvements such as larger datasets and fine-tuning.",
+        "Analyzed failure patterns (semantic drift, over-modernization, loss of register) to refine prompt design."
       ],
-      "dossier_desc": "Narrative description of the Archaic Translation project..."
+      "dossier_desc": "The project investigates prompt-engineering techniques for translating archaic Italian into modern Italian, drawing upon insights presented in the NLP Presentation. Three major prompting strategies were explored: zero-shot direct instruction, few-shot prompting with curated examples, and explanatory prompting specifying stylistic and semantic principles of translation. Two LLMs were evaluated using human judgment, examining semantic fidelity, grammatical correctness, and stylistic alignment. Analytical tools were created to inspect score variance and prompt sensitivity. Limitations emerged, including a small evaluation set, API constraints, and model bias. Future improvements include dataset expansion and supervised fine-tuning. The work demonstrates how prompt design strongly influences translation quality in historical linguistic domains."
     },
     "thermal_drift": {
-      "title": "Thermal Drift Prediction in Industrial Robotics Using Transformer Networks",
+      "title": "Thermal Drift Forecasting in Industrial Robotics using Transformer Networks",
       "role": "Machine Learning Researcher",
       "result": [
-        "Developed a complete experimental pipeline to model slow thermomechanical drift in a 3-DOF robotic platform.",
-        "Performed spectral and statistical analysis of thermal signals to identify long-term deformation patterns.",
-        "Engineered a robust set of thermal, temporal, and autoregressive features tailored for drift prediction.",
-        "Benchmarked classical ML models and a custom Transformer architecture, revealing strong axis-specific behaviours and different generalization capabilities.",
-        "Provided recommendations for better sensor placement and modelling strategies to enhance drift compensation in industrial robots."
+        "Designed and executed a complete experimental pipeline for modeling slow thermomechanical drift on a 3-DOF robotic platform.",
+        "Performed spectral and statistical analysis of temperature and drift signals, revealing ultra–low-frequency components and axis-dependent deformation patterns.",
+        "Engineered a robust feature set including thermal indicators, temporal encodings, derivatives, gradients, and autoregressive components tailored to drift forecasting.",
+        "Compared classical ML models with a customized Transformer architecture inspired by PatchTST, uncovering axis-specific behaviors and differing generalization abilities.",
+        "Provided recommendations on improved sensor placement, physical feature integration, and modeling strategies for enhanced drift compensation in industrial robots."
       ],
-      "dossier_desc": "Narrative description of the Thermal Drift project..."
+      "dossier_desc": "This project investigates the feasibility of modeling and predicting thermal drift in industrial robotic systems using modern deep learning techniques, particularly Transformer architectures for long-horizon temporal dependencies. As detailed in the technical report (pp. 1–6) :contentReference[oaicite:1]{index=1}, thermal drift arises from slow heat propagation through motors, joints, and structural elements, causing nanometric to micrometric end-effector displacement—an issue of high relevance in precision automation. A complete experimental pipeline was developed, including data acquisition on a 3-DOF linear robotic platform, advanced preprocessing, temporal alignment, and feature engineering of temperature and drift signals. Spectral analysis (pp. 5–6) revealed ultra–low-frequency components (≈10⁻⁴ Hz), confirming the slow, nonlinear nature of the phenomenon. Several baseline models such as Ridge Regression and Random Forest were tested, showing strong axis dependence and limited capability in capturing complex thermomechanical relationships. A Transformer architecture inspired by PatchTST was then trained to exploit patch-based temporal modeling and self-attention for long-range correlation learning. Although generalization difficulties were observed on validation data, the model demonstrated the ability to reconstruct low-frequency drift trends—especially on the Z axis (pp. 9–10)—indicating substantial potential when combined with richer physical features and more refined thermal sensing. The work outlines technical limitations, identifies promising research directions, and provides guidelines for future development of data-driven thermal drift compensation in industrial robotics."
     },
     "image_generation": {
-      "title": "Image Generation & Real-vs-Fake Classification Using GAN, Stable Diffusion and VGG16",
+      "title": "Image Generation and Real-vs-Fake Classification Using GAN, Stable Diffusion, and VGG16",
       "role": "Computer Vision Engineer",
       "result": [
-        "Developed a full pipeline to compare real COCO images with generated ones using both a custom GAN and Stable Diffusion.",
-        "Implemented a GAN from scratch with five convolutional layers and 64×64 output resolution, tracking training progression across 100 epochs.",
-        "Used Stable Diffusion 2.1 to generate high-quality images from COCO captions for comparison with GAN outputs.",
-        "Built a binary classifier by combining VGG16 feature extraction with a custom SVM head, training separate SVM models for 64×64, 256×256, and compressed images.",
-        "Evaluated multiple generation and preprocessing conditions (GAN/Stable at different resolutions and compression levels) and produced a full benchmark using accuracy, precision, recall and F1-score.",
-        "Observed that Stable Diffusion at 256×256 provided the most distinguishable fake samples, achieving the highest classification scores, while low-resolution GAN images significantly reduced classifier performance."
+        "Developed a full pipeline to compare real COCO images with synthetic images generated via a custom-built DC-GAN and Stable Diffusion 2.1.",
+        "Implemented a five-layer convolutional GAN from scratch with 64×64 output resolution, tracking adversarial training progress over 100 epochs.",
+        "Used Stable Diffusion to generate high-quality images from COCO captions, enabling direct comparative analysis between classical and modern generative models.",
+        "Built a binary classifier combining VGG16 feature extraction with a customized SVM head, training separate models for 64×64, 256×256, and compressed images.",
+        "Evaluated multiple generation and preprocessing conditions—resolutions, compression levels, and generator types—producing a comprehensive benchmark using accuracy, recall, and F1-score.",
+        "Found that Stable Diffusion at 256×256 generated the most realistic and distinguishable samples, achieving the highest classification scores, while low-resolution GAN outputs significantly degraded classifier performance."
       ],
-      "dossier_desc": "Narrative description of the Image Generation project..."
+      "dossier_desc": "This project presents a complete workflow for image generation and real-vs-fake classification by combining classical generative models (GAN) with modern diffusion models such as Stable Diffusion. As described in the technical presentation :contentReference[oaicite:2]{index=2}, a DC-GAN was trained on the COCO dataset for 100 epochs, exhibiting the characteristic fluctuating dynamics of generator–discriminator training. In parallel, Stable Diffusion 2.1 was used to produce high-quality images from COCO captions, enabling a controlled comparison between generative technologies. The classification system relies on VGG16 feature extraction paired with SVM classifiers trained under multiple conditions of resolution and compression. The experimental evaluation includes systematic benchmarking to determine which generative method produces more realistic images and how preprocessing affects detectability. Additional metrics, such as Inception Score and Feature Importance Score, were used to quantify generative quality. Results show that Stable Diffusion significantly outperforms the GAN in realism and classifier separability, whereas low-resolution GAN outputs negatively impact classification performance. The study concludes with recommendations for improving GAN architectures, applying data augmentation, and expanding datasets to higher resolutions."
     },
     "vehicle_simulation": {
       "title": "Vehicle Driving Simulation with Multi-Input Steering, Motor Control and Wheel Physics",
       "role": "Unity Simulation Developer",
       "result": [
-        "Developed a complete vehicle-control system integrating keyboard, on-screen joystick, physical joystick, and accelerometer/gyroscope steering inputs.",
-        "Implemented an accelerator module supporting forward drive, reverse gear logic, and dynamic switching between input sources (press button, joystick axis, keyboard arrows).",
-        "Built a custom handbrake system with toggle logic and safety checks, allowing stationary locking and gradual braking based on user input.",
-        "Created a full driving model using WheelColliders with torque, brake force, and steering angle calculations, synchronized to visible wheel meshes for realistic behaviour.",
-        "Added gyroscopic steering for mobile devices, enabling tilt-based directional control through Unity's hardware sensor APIs.",
-        "Integrated UI-based steering wheel with clamped angle values, allowing dynamic switching between steering modes (touch wheel, accelerometer, joystick).",
-        "Designed modular input components to allow quick substitution or combination of control methods for testing multiple driving configurations."
+        "Unified multi-input driving system supporting keyboard, virtual joystick, on-screen steering wheel and mobile sensors.",
+        "Modular acceleration and braking logic with forward/reverse handling and smooth torque transitions.",
+        "WheelCollider-based vehicle physics with realistic steering, traction behaviour and synchronized wheel-mesh animation.",
+        "Mobile gyroscopic steering with adaptive sensitivity for precise tilt-controlled direction input.",
+        "Configurable control architecture enabling fast swapping, testing and combination of multiple driving input modes."
       ],
-      "dossier_desc": "Narrative description of the Vehicle Simulation project..."
+      "dossier_desc": "The project implements a flexible and modular vehicle-driving simulation in Unity, designed to support multiple control schemes and realistic physical behaviour. The system unifies various input sources such as keyboard, virtual joysticks, touch-based steering wheels and mobile sensors, allowing seamless switching and comparative testing. Vehicle motion is driven by WheelColliders, which model torque, braking forces, steering angles and traction behaviour, while visual wheels remain synchronized with the physics. Acceleration and braking modules manage smooth transitions between forward and reverse motion, and implement safety conditions for handbrake and deceleration. Mobile devices benefit from gyroscopic steering with adaptive sensitivity, offering intuitive tilt-based control. Overall, the architecture supports rapid reconfiguration of control methods, making the simulation suitable for mobile games, research prototypes and environments requiring customizable driving interactions."
     }
   },
   "case_studies": {
